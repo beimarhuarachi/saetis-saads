@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
 ?>
 <html>
 
@@ -12,17 +12,17 @@
     <title>Sistema de Apoyo a la Empresa TIS</title>
 
     <!-- Core CSS - Include with every page -->
-    <link href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Librerias/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Page-Level Plugin CSS - Dashboard -->
-    <link href="../Librerias/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <link href="../Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="../lib/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
    
 
     <!-- SB Admin CSS - Include with every page -->
-    <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
-    <script src="../Librerias/js/validar_nombre.js" type="text/javascript"></script>
+    <link href="../lib/css/sb-admin.css" rel="stylesheet">
+    <script src="../lib/js/validar_nombre.js" type="text/javascript"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     
 </head>
@@ -62,7 +62,7 @@
                             <div class="form-group">
                                 
                                     <div class="form-group">
-                                        <form action="consultar_nombre.php" name="formulario1" role=form" method="post" onsubmit="return validarCampos(this)">
+                                        <form action="consultar-nombre.php" name="formulario1" role=form" method="post" onsubmit="return validarCampos(this)">
                                         <label id="label"><h5>Introduzca el Nombre Largo de su empresa:</h5></label>
                                         <input name="nombre" class="form-control" onkeypress="return validarLetras(event)"><br>
                                         <label id="label"><h5>Introduzca el Nombre Corto de su empresa:</h5></label>
@@ -77,7 +77,7 @@
                                         */?>
                                          </form>
                                         
-                                        <form action="ver_nombres.php" name="formulario2" role=form" method="post" target="_blank">
+                                        <form action="ver-nombres.php" name="formulario2" role=form" method="post" target="_blank">
                                             <button type="submit" class="btn btn-primary" target="_blank" >Ver Nombres Registrados</button><br><br>
                                             <?php
                                             //$idAsesor=$_POST['nombreAsesor'];
@@ -101,19 +101,19 @@
     <!-- /#wrapper -->
 
     <!-- Core Scripts - Include with every page -->
-    <script src="../Librerias/js/jquery-1.10.2.js"></script>
-    <script src="../Librerias/js/bootstrap.min.js"></script>
-    <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
     <!-- Page-Level Plugin Scripts - Dashboard -->
-    <script src="../Librerias/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="../Librerias/js/plugins/morris/morris.js"></script>
+    <script src="../lib/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="../lib/js/plugins/morris/morris.js"></script>
 
     <!-- SB Admin Scripts - Include with every page -->
-    <script src="../Librerias/js/sb-admin.js"></script>
+    <script src="../lib/js/sb-admin.js"></script>
 
     <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
-    <script src="../Librerias/js/demo/dashboard-demo.js"></script>
+    <script src="../lib/js/demo/dashboard-demo.js"></script>
     
 </body>
 

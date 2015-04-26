@@ -1,7 +1,7 @@
 <?php
  
 session_start();
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conect = new conexion();
 
 
@@ -34,7 +34,7 @@ $idPubli = $_GET['id_us'];
 	 //volver a la pagina---------------
          
          echo '<script>alert("Se elimino el documento correctamente");</script>';
-         echo '<script>window.location="../Vista/publicaciones.php";</script>';}
+         echo '<script>window.location="../vista/publicaciones.php";</script>';}
 	
 	
 

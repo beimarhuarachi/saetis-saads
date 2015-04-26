@@ -1,6 +1,6 @@
 <?php
   
-  include '../Modelo/conexion.php';
+  include '../modelo/conexion.php';
   session_start();
   $conexion = new conexion();
 
@@ -17,7 +17,7 @@
       }
       else
       {
-         $nombreF= '../Repositorio/asesor/Contrato.tex';
+         $nombreF= '../app/Repositorio/asesor/Contrato.tex';
          $existeFile = FALSE;
          if (file_exists($nombreF))
          {
@@ -76,7 +76,7 @@
                     $remplazo['sistema']              = $sistema[0];
                     $remplazo['convocatoria']         = $convo[0];
                         
-                    $ruta = "../Repositorio/asesor";
+                    $ruta = "../app/Repositorio/asesor";
                     
                     chdir($ruta);
                         
@@ -122,7 +122,7 @@
                     rename("Contrato.pdf", $file);
                     rename($file, $rutaDir.$pdf );
                     
-                    $descrip = "../Repositorio/".$nombreUA."/Contratos/".$pdf;
+                    $descrip = "../app/Repositorio/".$nombreUA."/Contratos/".$pdf;
                     $fecha = date('Y-m-d');
                     $hora = date("G:H:i");
                     $visible = "TRUE";

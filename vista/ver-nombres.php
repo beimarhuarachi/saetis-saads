@@ -5,8 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-include '../Librerias/fpdf.php';
-include '../Modelo/conexion.php';
+include '../lib/fpdf.php';
+include '../modelo/conexion.php';
 
 class PDF extends FPDF
 {

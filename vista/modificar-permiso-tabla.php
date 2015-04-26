@@ -6,7 +6,7 @@ session_start();
 
 $usuario = $_SESSION['usuario'];
 $contrasena = $_SESSION['contrasena'];
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conectar = new conexion();
 
 $rolAnt=$_SESSION["Variable1"];
@@ -19,7 +19,7 @@ $permiso = $_REQUEST['estado'];
 	 echo'
 	<html>
 		<head>
-			<meta http-equiv="REFRESH" content="0;url=asignar_permisos.php">
+			<meta http-equiv="REFRESH" content="0;url=asignar-permisos.php">
 		</head>
 	</html>';
 

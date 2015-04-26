@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
     session_start();
 
@@ -19,7 +19,7 @@ $delActiv = $_GET['id_us'];
              //volver a la pagina---------------
 
          echo '<script>alert("Se elimino  correctamente");</script>';
-         echo '<script>window.location="../Vista/bitacora_ingreso.php";</script>';
+         echo '<script>window.location="../vista/bitacora-ingreso.php";</script>';
           
              
              

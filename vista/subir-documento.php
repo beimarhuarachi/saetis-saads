@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     session_start();
     $con=new conexion();
     $uActivo = $_SESSION['usuario'];
@@ -16,17 +16,17 @@
     <title>Sistema de Apoyo a la Empresa TIS</title>
 
     <!-- Core CSS - Include with every page -->
-    <link href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Librerias/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Page-Level Plugin CSS - Dashboard -->
-    <link href="../Librerias/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <link href="../Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="../lib/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
    
 
     <!-- SB Admin CSS - Include with every page -->
-    <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
-    <script type="text/javascript" src="../Librerias/js/subir_documento.js"></script>
+    <link href="../lib/css/sb-admin.css" rel="stylesheet">
+    <script type="text/javascript" src="../lib/js/subir_documento.js"></script>
 
 </head>
 
@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="inicio_grupo_empresa.php">Inicio </a>
+                <a class="navbar-brand" href="inicio-grupo-empresa.php">Inicio </a>
             </div>
             <!-- /.navbar-header -->
 
@@ -113,7 +113,7 @@
                                     
                                 </li>
                                 <li>
-                                    <a href="publicacion_grupo.php">Recepci&oacute;n Documentos </a>
+                                    <a href="publicacion-grupo.php">Recepci&oacute;n Documentos </a>
                                     
                                 </li>
                                
@@ -129,7 +129,7 @@
                                                  $idUsuarioAsesor='leticia';
                                                  $idUsuarioG='freevalue';
                                 echo   ""
-                                     . "<form name='formularioNombre' action='verificar_nombre.php' enctype='multipart/form-data' method='POST'>"
+                                     . "<form name='formularioNombre' action='verificar-nombre.php' enctype='multipart/form-data' method='POST'>"
                                      . "<input type='hidden' name='nombreGrupo' value='$idUsuarioG'>"
                                      . "<input type='hidden' name='nombreAsesor' value='$idUsuarioAsesor'>"
                                      . "</form>"
@@ -138,15 +138,15 @@
                                      . "</li>";
                                 ?>
                                 <li>
-                                    <a href="seleccionar_asesor.php">Seleccionar Asesor</a>
+                                    <a href="seleccionar-asesor.php">Seleccionar Asesor</a>
                                 </li>
                                 
                                  <li>
-                                     <a href="AnadirSocio.php">Añadir socios</a>
+                                     <a href="anadir-socio.php">Añadir socios</a>
                                 </li>
                                 
                                 <li>
-                                    <a href="AnadirRL.php">Seleccionar Representante legal</a>
+                                    <a href="anadir-rl.php">Seleccionar Representante legal</a>
                                 </li>
                                 
                             </ul>
@@ -158,7 +158,7 @@
                                                     
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="historia_actividades.php">Historia de actividades</a>
+                                    <a href="historia-actividades.php">Historia de actividades</a>
                                 </li>
                                 
                             </ul>  
@@ -292,19 +292,19 @@
     <!-- /#wrapper -->
 
     <!-- Core Scripts - Include with every page -->
-    <script src="../Librerias/js/jquery-1.10.2.js"></script>
-    <script src="../Librerias/js/bootstrap.min.js"></script>
-    <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
     <!-- Page-Level Plugin Scripts - Dashboard -->
-    <script src="../Librerias/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="../Librerias/js/plugins/morris/morris.js"></script>
+    <script src="../lib/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="../lib/js/plugins/morris/morris.js"></script>
 
     <!-- SB Admin Scripts - Include with every page -->
-    <script src="../Librerias/js/sb-admin.js"></script>
+    <script src="../lib/js/sb-admin.js"></script>
 
     <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
-    <script src="../Librerias/js/demo/dashboard-demo.js"></script>
+    <script src="../lib/js/demo/dashboard-demo.js"></script>
 
 </body>
 

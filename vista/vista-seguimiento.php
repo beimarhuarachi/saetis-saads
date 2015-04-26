@@ -2,8 +2,8 @@
 
 <?php
 
-        require_once '../Modelo/conexion.php';
-        require_once '../Modelo/Model/GrupoEmpresa.php';   
+        require_once '../modelo/conexion.php';
+        require_once '../modelo/Model/GrupoEmpresa.php';   
         session_start();
         $usuario = $_SESSION['usuario'];
      

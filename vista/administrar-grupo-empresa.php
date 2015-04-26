@@ -9,45 +9,45 @@ $uActivo = $_SESSION['usuario'];
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sistema de Apoyo a la Empresa TIS</title>
         <!-- JQuery -->
-        <script type="text/javascript" src="../Librerias/lib/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="../lib/lib/jquery-2.1.0.min.js"></script>
         <!-- icheck -->
-        <link href="../Librerias/icheck/skins/square/green.css" rel="stylesheet">
-        <script src="../Librerias/lib/icheck.min.js"></script>
+        <link href="../lib/icheck/skins/square/green.css" rel="stylesheet">
+        <script src="../lib/lib/icheck.min.js"></script>
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-        <script type="text/javascript" src="../Librerias/lib/bootstrap.js"></script>
+        <link rel="stylesheet" href="../lib/css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="../lib/lib/bootstrap.js"></script>
         <!-- Docs -->
-        <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/docs.css">
+        <link rel="stylesheet" type="text/css" href="../lib/lib/css/docs.css">
         <!-- Font-Awesome -->
-        <link rel="stylesheet" type="text/css" href="../Librerias/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.css">
         <!-- Bootstrap-datetimepicker -->
-        <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-datetimepicker.css">
-        <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.es.js"></script>
+        <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-datetimepicker.css">
+        <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.es.js"></script>
         <!-- Bootstrap-multiselect -->
-        <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-multiselect.css">
-        <script type="text/javascript" src="../Librerias/lib/bootstrap-multiselect.js"></script>
+        <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-multiselect.css">
+        <script type="text/javascript" src="../lib/lib/bootstrap-multiselect.js"></script>
         <!-- Bootstrap-validator -->
-        <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrapValidator.css">
-        <script type="text/javascript" src="../Librerias/lib/bootstrapValidator.js"></script>
+        <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrapValidator.css">
+        <script type="text/javascript" src="../lib/lib/bootstrapValidator.js"></script>
         <!-- Validators -->
-        <script type="text/javascript" src="../Librerias/lib/validator/diferenteActividadPlanificacion.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/diferenteEntregable.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/stringLength.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/notEmpty.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/callback.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/date.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/numeric.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/porcentajeMax.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/porcentajeMin.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/integerN.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/validator/porcentajeAc.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/diferenteActividadPlanificacion.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/diferenteEntregable.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/stringLength.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/notEmpty.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/callback.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/date.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/numeric.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/porcentajeMax.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/porcentajeMin.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/integerN.js"></script>
+        <script type="text/javascript" src="../lib/lib/validator/porcentajeAc.js"></script>
         <!-- JS -->
-        <script type="text/javascript" src="../Librerias/lib/funcion.js"></script>
-        <script type="text/javascript" src="../Librerias/lib/funcionSeguimiento.js"></script>
-        <link href="../Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+        <script type="text/javascript" src="../lib/lib/funcion.js"></script>
+        <script type="text/javascript" src="../lib/lib/funcionSeguimiento.js"></script>
+        <link href="../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
         <!-- SB Admin CSS - Include with every page -->
-        <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
+        <link href="../lib/css/sb-admin.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
@@ -60,7 +60,7 @@ $uActivo = $_SESSION['usuario'];
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="inicio_asesor.php">Inicio </a>
+                    <a class="navbar-brand" href="inicio-asesor.php">Inicio </a>
                 </div>
                 <!-- /.navbar-header -->
                 <ul class="nav navbar-top-links navbar-right">
@@ -74,7 +74,7 @@ $uActivo = $_SESSION['usuario'];
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li>
-                                <a href="modificar_asesor.php"><i class="fa fa-user fa-fw"></i> Modificar Datos personales</a>
+                                <a href="modificar-asesor.php"><i class="fa fa-user fa-fw"></i> Modificar Datos personales</a>
                             </li>
                             <li class="divider"></li>
                             <li>
@@ -89,19 +89,19 @@ $uActivo = $_SESSION['usuario'];
                     <div class="sidebar-collapse">
                         <ul class="nav" id="side-menu">
                             <li>
-                                <a href="AdministrarGrupoEmpresa.php"><i class="glyphicon glyphicon-book"></i> Administrar Grupo Empresas</a>
+                                <a href="administrar-grupo-empresa.php"><i class="glyphicon glyphicon-book"></i> Administrar Grupo Empresas</a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-bar-chart-o fa-files-o "></i> Documentos <span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="../Vista/documentos_generados.php">Contratos Emitidos</a>
+                                        <a href="../vista/documentos-generados.php">Contratos Emitidos</a>
                                     </li>
                                     <li>
-                                        <a href="lista_doc_subidos.php">Documentos Subidos </a>
+                                        <a href="lista-doc-subidos.php">Documentos Subidos </a>
                                     </li>
                                     <li>
-                                        <a href="documentos_recibidos.php">Documentos Recibidos</a>
+                                        <a href="documentos-recibidos.php">Documentos Recibidos</a>
                                     </li>
                                 </ul>
                             </li>
@@ -109,26 +109,26 @@ $uActivo = $_SESSION['usuario'];
                                 <a href="#"><i class="fa fa-tasks fa-fw"></i> Tareas<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="InscripcionProyecto.php">Registrar Proyecto</a>
+                                        <a href="inscripcion-proyecto.php">Registrar Proyecto</a>
                                     </li>
                                     <li>
-                                        <a href="../Vista/subirarchivoasesor.php">Subir Documentos</a>
+                                        <a href="../vista/subir-archivo-asesor.php">Subir Documentos</a>
                                     </li>
                                     <li>
-                                        <a href="../Vista/RegistrarDocumentosRequeridos.php">Registrar Documentos Requeridos</a>
+                                        <a href="../vista/registrar-documentos-requeridos.php">Registrar Documentos Requeridos</a>
                                     </li>
 
                                     <li>
-                                        <a href="ConfiguracionFechasRecepcion.php" >Configurar Fechas para la Recepci&oacute;n de Documentos</a>
+                                        <a href="configuracion-fechas-recepcion.php" >Configurar Fechas para la Recepci&oacute;n de Documentos</a>
                                     </li>
                                     <li>
-                                        <a href="../Vista/publicar_asesor.php">Crear Publicaci&oacute;n </a>
+                                        <a href="../vista/publicar-asesor.php">Crear Publicaci&oacute;n </a>
                                     </li>
                                     <li>
-                                        <a href="ordenDeCambio.php">Emitir Orden de Cambio</a>
+                                        <a href="orden-de-cambio.php">Emitir Orden de Cambio</a>
                                     </li>
                                     <li>
-                                        <a href="notificacion_conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
+                                        <a href="notificacion-conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
                                     </li>
                                     <li>
                                         <a href="contrato.php">Emitir Contrato </a>
@@ -144,23 +144,23 @@ $uActivo = $_SESSION['usuario'];
                         <a href="#"><i class="glyphicon glyphicon-th-list"></i> Evaluacion<span class="fa arrow"></span></a>
                         <ul class="nav nav-third-level">
                             <li>
-                                <a href="lista_evaluacion.php">Evaluacion 2 Fase </a>                             
+                                <a href="lista-evaluacion.php">Evaluacion 2 Fase </a>                             
                             </li>
                             <li>
                                 <a href="#">Evaluacion 3 Fase <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="CrearModalidadEvaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
+                                        <a href="crear-modalidad-evaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
                                     </li>
 
                                     <li>
                                         <a href="#">Criterio de Calificaci&oacute;n<span class="fa arrow"></span></a>
                                         <ul class="nav nav-third-level">
                                             <li>
-                                                <a href="CrearModalidadCalificacion.php"> Crear Criterio de Calificaci&oacute;n</a>
+                                                <a href="crear-modalidad-calificacion.php"> Crear Criterio de Calificaci&oacute;n</a>
                                             </li>
                                             <li>
-                                                <a href="EliminarCriterioCalificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
+                                                <a href="eliminar-criterio-calificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -169,29 +169,29 @@ $uActivo = $_SESSION['usuario'];
                                         <a href="#">Formulario de Evaluacion<span class="fa arrow"></span></a>
                                         <ul class="nav nav-third-level">
                                             <li>
-                                                <a href="CrearFormulario.php">Crear Formulario de Evaluacion</a>
+                                                <a href="crear-formulario.php">Crear Formulario de Evaluacion</a>
                                             </li>
                                             <li>
-                                                <a href="SeleccionarFormulario.php"> Habilitar Formulario de Evaluacion </a>   
+                                                <a href="seleccionar-formulario.php"> Habilitar Formulario de Evaluacion </a>   
                                             </li>
                                             <li>
-                                                <a href="EliminarFormulario.php">Eliminar Formulario de Evaluacion</a>
+                                                <a href="eliminar-formulario.php">Eliminar Formulario de Evaluacion</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="EvaluarGrupoEmpresa.php">Evaluar Grupo Empresa </a>   
+                                        <a href="evaluar-grupo-empresa.php">Evaluar Grupo Empresa </a>   
                                     </li>                                    
                                     
                                 </ul>    
                             </li>
                             <li>
-                                <a href="../Vista/EvaluacionGeneral.php">Evaluacion Final </a>   
+                                <a href="../vista/evaluacion-general.php">Evaluacion Final </a>   
                             </li>
                         </ul>
                     </li>
                             <li>
-                                <a href="../Vista/publicaciones.php"><i class="fa fa-book"></i> Publicaciones </a>
+                                <a href="../vista/publicaciones.php"><i class="fa fa-book"></i> Publicaciones </a>
                             </li>
                             </ul><!-- /#side-menu -->
                             </div><!-- /.sidebar-collapse -->
@@ -246,7 +246,7 @@ $uActivo = $_SESSION['usuario'];
                             <div class="col-lg-12">
                                 <form method = "post" id="FormEvaluar">
                                     <?php
-                                    include '../Modelo/conexion.php';
+                                    include '../modelo/conexion.php';
                                     $conect = new conexion();
                                     $SelectGI = $conect->consulta("SELECT NOMBRE_UGE FROM inscripcion
                                                         WHERE NOMBRE_UA='$uActivo'");
@@ -298,11 +298,11 @@ $uActivo = $_SESSION['usuario'];
                                                                         <td>' . $Rep[$i] . '</td>
                                                                         <td>' . $Estado[$i] . '</td>
                                                                         <td>
-                                                                            <a href="HabilitarGrupoEmpresa.php?GE=' . $GruposIn[$i] . '&Operacion=Habilitar"
+                                                                            <a href="habilitar-grupo-empresa.php?GE=' . $GruposIn[$i] . '&Operacion=Habilitar"
                                                                             class="btn btn-default btn-xs">Habilitar</a>
-                                                                            <a href="HabilitarGrupoEmpresa.php?GE=' . $GruposIn[$i] . '&Operacion=Deshabilitar"
+                                                                            <a href="habilitar-grupo-empresa.php?GE=' . $GruposIn[$i] . '&Operacion=Deshabilitar"
                                                                             class="btn btn-default btn-xs">Deshabilitar</a>
-                                                                            <a href="ModificarEvaluacionGrupoEmpresa.php?GE=' . $GruposIn[$i] . '"
+                                                                            <a href="modificar-evaluacion-grupo-empresa.php?GE=' . $GruposIn[$i] . '"
                                                                             class="btn btn-default btn-xs">Modificar Evaluacion</a>
                                                                         </td>
                                                             </tr>';
@@ -326,7 +326,7 @@ $uActivo = $_SESSION['usuario'];
                     </div>
                     <!-- /#page-wrapper -->
                 </div>
-                <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-                <script src="../Librerias/js/sb-admin.js"></script>
+                <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                <script src="../lib/js/sb-admin.js"></script>
             </body>
         </html>

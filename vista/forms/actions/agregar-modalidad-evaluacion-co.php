@@ -1,6 +1,6 @@
 <?php
-include '../../../Modelo/conexion.php';
-//header('Location: ../../CrearModalidadEvaluacion.php');
+include '../../../modelo/conexion.php';
+//header('Location: ../../crear-modalidad-evaluacion.php');
 $textDescripcionD=$_POST["descripcionDocumento"];
 
 $Agregar=$_POST["btnCrearModalidad"];
@@ -45,14 +45,14 @@ if(isset($Agregar))
 
                         echo "<SCRIPT LANGUAGE='javascript'>". 
                             " alert('Se ha registrado satisfactoriamente el criterio_evaluacion');".
-                            " document.location=('../../CrearModalidadEvaluacion.php');</SCRIPT>";
+                            " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                     }
                     else 
                         
                     {
                           echo "<SCRIPT LANGUAGE='javascript'>". 
                             " alert('Llene un campo valido no puede registrar un espacio en blanco.');".
-                            " document.location=('../../CrearModalidadEvaluacion.php');</SCRIPT>";
+                            " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                     }    
                     
                 }
@@ -60,7 +60,7 @@ if(isset($Agregar))
                 {
                     echo "<SCRIPT LANGUAGE='javascript'>". 
                         " alert('EL criterio que ingreso ya se encuentra registrado. ');".
-                        " document.location=('../../CrearModalidadEvaluacion.php');</SCRIPT>";
+                        " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                 }
 }
 ?>

@@ -15,49 +15,49 @@
     <title>Sistema de Apoyo a la Empresa TIS</title>
 
     <!-- JQuery -->
-    <script type="text/javascript" src="../Librerias/lib/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../lib/lib/jquery-2.1.0.min.js"></script>
     <!-- icheck -->
-    <link href="../Librerias/icheck/skins/square/green.css" rel="stylesheet">
-    <script src="../Librerias/lib/icheck.min.js"></script>
+    <link href="../lib/icheck/skins/square/green.css" rel="stylesheet">
+    <script src="../lib/lib/icheck.min.js"></script>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap.js"></script>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../lib/lib/bootstrap.js"></script>
     <!-- Docs -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/docs.css">
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/docs.css">
     <!-- Font-Awesome -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.css">
     <!-- Bootstrap-datetimepicker -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-datetimepicker.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.es.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.es.js"></script>
     <!-- Bootstrap-multiselect -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-multiselect.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-multiselect.css">
+    <script type="text/javascript" src="../lib/lib/bootstrap-multiselect.js"></script>
     <!-- Bootstrap-validator -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrapValidator.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrapValidator.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrapValidator.css">
+    <script type="text/javascript" src="../lib/lib/bootstrapValidator.js"></script>
     <!-- Validators -->
-    <script type="text/javascript" src="../Librerias/lib/validator/diferenteActividadPlanificacion.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/diferenteEntregable.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/stringLength.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/notEmpty.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/callback.js"></script
-    <script type="text/javascript" src="../Librerias/lib/validator/date.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/numeric.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/porcentajeMax.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/porcentajeMin.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/integerN.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/porcentajeAc.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/diferenteActividadPlanificacion.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/diferenteEntregable.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/stringLength.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/notEmpty.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/callback.js"></script
+    <script type="text/javascript" src="../lib/lib/validator/date.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/numeric.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/porcentajeMax.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/porcentajeMin.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/integerN.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/porcentajeAc.js"></script>
     <!-- JS -->
-    <script type="text/javascript" src="../Librerias/lib/funcion.js"></script>
+    <script type="text/javascript" src="../lib/lib/funcion.js"></script>
 
 
 
 
 
-    <link href="../Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
     <!-- SB Admin CSS - Include with every page -->
-    <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
+    <link href="../lib/css/sb-admin.css" rel="stylesheet">
 
 </head>
 
@@ -78,7 +78,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="inicio_asesor.php">Inicio </a>
+                <a class="navbar-brand" href="inicio-asesor.php">Inicio </a>
             </div>
             <!-- /.navbar-header -->
 
@@ -130,10 +130,10 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-files-o "></i> Documentos <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                            <a href="../Vista/subirarchivoasesor.php">Subir Documentos</a>
+                                            <a href="../vista/subir-archivo-asesor.php">Subir Documentos</a>
                                 </li>
                                 <li>
-                                    <a href="../Vista/RegistrarDocumentosRequeridos.php">Registrar Documentos</a>
+                                    <a href="../vista/registrar-documentos-requeridos.php">Registrar Documentos</a>
                                 </li>
                                 
                                 <li>
@@ -142,10 +142,10 @@
                                         
                                         
                                         <li>
-                                            <a href="../Vista/publicar_asesor.php">Nueva Publicaci&oacute;n </a>
+                                            <a href="../vista/publicar-asesor.php">Nueva Publicaci&oacute;n </a>
                                         </li>
                                         <li>
-                                            <a href="../Controlador/publicaciones.php">Publicaciones </a>
+                                            <a href="../controlador/publicaciones.php">Publicaciones </a>
                                         </li>
                                        
                                     </ul>
@@ -155,10 +155,10 @@
                                     <a href="#">Recepci&oacute;n Documentos <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="documentos_recibidos.php">Documentos Recibidos</a>
+                                            <a href="documentos-recibidos.php">Documentos Recibidos</a>
                                         </li>
                                         <li>
-                                            <a href="ConfiguracionFechasRecepcion.php" ><span class="fa fa-calendar-o"></span> Configuraci&oacute;n de Fechas para la Recepci&oacute;n de Documentos</a>
+                                            <a href="configuracion-fechas-recepcion.php" ><span class="fa fa-calendar-o"></span> Configuraci&oacute;n de Fechas para la Recepci&oacute;n de Documentos</a>
                                             
                                         </li>
          
@@ -177,10 +177,10 @@
                                     <a href="contrato.php">Emitir Contrato </a>
                                 </li>
                                 <li>
-                                    <a href="ordenDeCambio.php">Emitir Orden de Cambio</a>
+                                    <a href="orden-de-cambio.php">Emitir Orden de Cambio</a>
                                 </li>
                                 <li>
-                                    <a href="notificacion_conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
+                                    <a href="notificacion-conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
                                 </li>
                                 <li>
                                     <a href="#">Seguimiento Grupo Empresa <span class="fa arrow"></span></a>
@@ -197,25 +197,25 @@
                                         <a href="#">Evaluacion Grupo Empresa<span class="fa arrow"></span></a>
                                             <ul class="nav nav-third-level">
                                                 <li>
-                                                    <a href="CrearModalidadEvaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
+                                                    <a href="crear-modalidad-evaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
                                                 </li>
                                                 <li>
-                                                    <a href="CrearModalidadCalificacion.php"> Criterio de Calificaci&oacute;n</a>
+                                                    <a href="crear-modalidad-calificacion.php"> Criterio de Calificaci&oacute;n</a>
                                                 </li>
                                                  <li>
-                                                    <a href="EliminarCriterioCalificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
+                                                    <a href="eliminar-criterio-calificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
                                                 </li>
                                                 <li>
-                                                    <a href="CrearFormulario.php">Crear Formulario de Evaluacion</a>
+                                                    <a href="crear-formulario.php">Crear Formulario de Evaluacion</a>
                                                 </li>
                                                 <li>
-                                                    <a href="EliminarFormulario.php">Eliminar Formulario de Evaluacion</a>
+                                                    <a href="eliminar-formulario.php">Eliminar Formulario de Evaluacion</a>
                                                 </li>
                                                 <li>
-                                                    <a href="SeleccionarFormulario.php"> Seleccionar Formulario de Evaluacion </a>   
+                                                    <a href="seleccionar-formulario.php"> Seleccionar Formulario de Evaluacion </a>   
                                                 </li>
                                                 <li>
-                                                    <a href="EvaluarGrupoEmpresa.php">Evaluar Grupo Empresa </a>   
+                                                    <a href="evaluar-grupo-empresa.php">Evaluar Grupo Empresa </a>   
                                                 </li>
                                             </ul>
                                 </li>
@@ -237,12 +237,12 @@
                               <a href="#"><i class="fa fa-tasks fa-fw"></i>Informacion Personal<span class="fa arrow"></span> </a>  
                                               <ul class="nav nav-third-level">
                                                 <li>
-                                                    <a href="modificar_asesor.php">Modificar Datos Personales </a>                             
+                                                    <a href="modificar-asesor.php">Modificar Datos Personales </a>                             
                                                 </li>       
                                             </ul>
                           </li>
                           <li>
-                            <a href="eliminar_doc.php"><i class="fa fa-question-circle fa-fw"></i> Eliminar Documentos subidos <span class="fa arrow"></span></a>
+                            <a href="eliminar-doc.php"><i class="fa fa-question-circle fa-fw"></i> Eliminar Documentos subidos <span class="fa arrow"></span></a>
    
                         </li>
                     </ul>
@@ -295,7 +295,7 @@
                   
                      
                    <?php 
-                         $direcRep = "../Repositorio/asesor"; 
+                         $direcRep = "../app/Repositorio/asesor"; 
                          $abriRep=opendir($dir); 
                          echo "<br><br>"; 
                          while ($archivo = readdir($directorio))
@@ -330,8 +330,8 @@
 
     </div>
 
-    <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="../Librerias/js/sb-admin.js"></script>
+    <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../lib/js/sb-admin.js"></script>
 </body>
 
 </html>

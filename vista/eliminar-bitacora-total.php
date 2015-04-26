@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
     session_start();
 
@@ -15,6 +15,6 @@ $peticion = $conectar->consulta("DELETE FROM `sesion` WHERE 1");
 
  //volver a la pagina---------------
          echo '<script>alert("Se elimino  correctamente");</script>';
-         echo '<script>window.location="../Vista/bitacora_ingreso.php";</script>';
+         echo '<script>window.location="../vista/bitacora-ingreso.php";</script>';
 ?>
 

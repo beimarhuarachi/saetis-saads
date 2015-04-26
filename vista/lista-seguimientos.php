@@ -1,7 +1,7 @@
  <?php  
  session_start();
 $uActivo = $_SESSION['usuario'];
-include '../Modelo/conexion.php';  
+include '../modelo/conexion.php';  
 $conectar=new conexion();
  ?> 
 
@@ -13,28 +13,28 @@ $conectar=new conexion();
 
 
 
-    <script type="text/javascript" src="../Librerias/lib/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../lib/lib/jquery-2.1.0.min.js"></script>
     <!-- icheck -->
 
-    <link href="../Librerias/icheck/skins/square/green.css" rel="stylesheet">
-    <script src="../Librerias/lib/icheck.min.js"></script>
+    <link href="../lib/icheck/skins/square/green.css" rel="stylesheet">
+    <script src="../lib/lib/icheck.min.js"></script>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap.js"></script>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../lib/lib/bootstrap.js"></script>
     <!-- Docs -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/docs.css">
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/docs.css">
     <!-- Font-Awesome -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.css">
     <!-- Bootstrap-datetimepicker -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-datetimepicker.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.es.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.es.js"></script>
     <!-- Bootstrap-multiselect -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-multiselect.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-multiselect.css">
+    <script type="text/javascript" src="../lib/lib/bootstrap-multiselect.js"></script>
     <!-- Bootstrap-validator -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrapValidator.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrapValidator.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrapValidator.css">
+    <script type="text/javascript" src="../lib/lib/bootstrapValidator.js"></script>
     
     <script type="text/javascript">
   $(document).ready(function(){
@@ -52,12 +52,12 @@ $conectar=new conexion();
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                     <a href="inicio_asesor.php" type="submit" class="close" aria-hidden="true">&times;</a>
+                     <a href="inicio-asesor.php" type="submit" class="close" aria-hidden="true">&times;</a>
                 
             <div class="modal-header">
                  
             </div>
-                <form method="post" action="evaluacionFinal.php">
+                <form method="post" action="evaluacion-final.php">
             <div class="modal-body">
                
                 

@@ -5,7 +5,7 @@
     $fec2="No registrado";
     $hor2="No registrado";
     //$UsuarioActivo = $_SESSION['usuario'];
-include '../../../Modelo/conexion.php';
+include '../../../modelo/conexion.php';
 
 $co=new conexion();
 if(isset($selecDoc))

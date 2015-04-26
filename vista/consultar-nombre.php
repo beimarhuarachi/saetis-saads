@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 
 function LimpiaEspacios($CadenaConMuchosEspacios)
 {

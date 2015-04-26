@@ -1,5 +1,5 @@
 <?php
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conectar = new conexion();
 session_start();
 
@@ -22,15 +22,15 @@ $addRol = $_POST['rol'];
         if(!is_array($verificarD))
         {
             $peticion = $conectar->consulta("INSERT INTO `gestion` (`ID_G`, `NOM_G`, `FECHA_INICIO_G`, `FECHA_FIN_G`) VALUES (NULL, '$addRol', '$addini', '$addfin')");    
-            echo"<script type=\"text/javascript\">alert('Se registro satisfactoriamenta la gestion'); window.location='add_gestion.php';</script>";    
+            echo"<script type=\"text/javascript\">alert('Se registro satisfactoriamenta la gestion'); window.location='add-gestion.php';</script>";    
         }
         else
         {
-            echo"<script type=\"text/javascript\">alert('El rango de fechas esta siendo utilizado en otra gestion'); window.location='add_gestion.php';</script>";    
+            echo"<script type=\"text/javascript\">alert('El rango de fechas esta siendo utilizado en otra gestion'); window.location='add-gestion.php';</script>";    
         }
     }
     else
     {
-        echo"<script type=\"text/javascript\">alert('Ya existe una gestion con ese nombre'); window.location='add_gestion.php';</script>";
+        echo"<script type=\"text/javascript\">alert('Ya existe una gestion con ese nombre'); window.location='add-gestion.php';</script>";
     }
 ?>

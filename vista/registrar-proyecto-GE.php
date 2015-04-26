@@ -1,6 +1,6 @@
 <?php
 
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 session_start();
 $conect = new conexion();
 $nombreU = $_SESSION['usuario'];
@@ -23,15 +23,15 @@ if (isset($_POST['proyecto'])) {
             $conect->consulta("INSERT INTO planificacion(NOMBRE_U, ESTADO_E, FECHA_INICIO_P, FECHA_FIN_P) VALUES ('$nombreU', 'registrar planificacion', '2014-12-12', '2020-12-12')");
 
 
-            echo"<script type=\"text/javascript\">alert('Su inscripcion a sido satisfactoria'); window.location='../Vista/inicio_grupo_empresa.php';</script>";  
+            echo"<script type=\"text/javascript\">alert('Su inscripcion a sido satisfactoria'); window.location='../vista/inicio-grupo-empresa.php';</script>";  
 
         }
         else{        
-           echo"<script type=\"text/javascript\">alert('Por favor, seleccione un proyecto'); window.location='../Vista/InscripcionGEProyecto.php';</script>";  
+           echo"<script type=\"text/javascript\">alert('Por favor, seleccione un proyecto'); window.location='../vista/inscripcion-GE-proyecto.php';</script>";  
         }
     }
     else{
-          echo"<script type=\"text/javascript\">alert('Usted ya se registro a un proyecto'); window.location='../Vista/InscripcionGEProyecto.php';</script>";  
+          echo"<script type=\"text/javascript\">alert('Usted ya se registro a un proyecto'); window.location='../vista/inscripcion-GE-proyecto.php';</script>";  
         
     }
     

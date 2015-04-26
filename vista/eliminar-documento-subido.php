@@ -1,7 +1,7 @@
 <?php
  
 session_start();
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conect = new conexion();
 
 
@@ -25,7 +25,7 @@ $idgp = $_GET['id_us'];
     	$fila = mysql_fetch_array($peticion_registro);
     	 $id=$fila[0];
     	 $id1=$fila[1];
-    	 $ruta="../Repositorio/asesor/"."$idgp";
+    	 $ruta="../app/Repositorio/asesor/"."$idgp";
 
 	unlink($ruta);
             $doc_eliminar=$conect->consulta(" DELETE FROM `documento` WHERE ID_R='$id'");
@@ -38,7 +38,7 @@ $idgp = $_GET['id_us'];
 	 //volver a la pagina---------------
          
          echo '<script>alert("Se elimino el documento correctamente");</script>';
-         echo '<script>window.location="../Vista/lista_doc_subidos.php";</script>';
+         echo '<script>window.location="../vista/lista-doc-subidos.php";</script>';
 	
 	
 

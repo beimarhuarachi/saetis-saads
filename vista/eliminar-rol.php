@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
     session_start();
 
@@ -15,5 +15,5 @@ $peticion = $conectar->consulta("DELETE FROM rol WHERE ROL_R='".$delRol."'");
 
  //volver a la pagina---------------
          echo '<script>alert("Se elimino  correctamente");</script>';
-         echo '<script>window.location="../Vista/add_roles.php";</script>';
+         echo '<script>window.location="../vista/add-roles.php";</script>';
 ?>

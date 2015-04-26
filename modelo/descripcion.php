@@ -1,5 +1,5 @@
 <?php
-//require_once('conexion_pd.php');
+//require_once('conexion-pd.php');
 class Descripcion 
 {
 	const TABLA = 'descripcion';

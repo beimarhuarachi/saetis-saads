@@ -1,6 +1,6 @@
 <?php
     
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     session_start();
     $UsuarioActivo = $_SESSION['usuario'];
     include("controlSesion.php");
@@ -20,50 +20,50 @@
 
     <title>Sistema de Apoyo a la Empresa TIS</title>
 
-    <script type="text/javascript" src="../Librerias/lib/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../lib/lib/jquery-2.1.0.min.js"></script>
     <!-- icheck -->
-    <link href="../Librerias/icheck/skins/square/green.css" rel="stylesheet">
-    <script src="../Librerias/lib/icheck.min.js"></script>
+    <link href="../lib/icheck/skins/square/green.css" rel="stylesheet">
+    <script src="../lib/lib/icheck.min.js"></script>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Docs -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/docs.css">
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/docs.css">
     <!-- Font-Awesome -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.css">
     <!-- Bootstrap-datetimepicker -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-datetimepicker.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-datetimepicker.es.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../lib/lib/bootstrap-datetimepicker.es.js"></script>
     <!-- Bootstrap-multiselect -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrap-multiselect.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrap-multiselect.css">
+    <script type="text/javascript" src="../lib/lib/bootstrap-multiselect.js"></script>
     <!-- Bootstrap-validator -->
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/bootstrapValidator.css">
-    <script type="text/javascript" src="../Librerias/lib/bootstrapValidator.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/bootstrapValidator.css">
+    <script type="text/javascript" src="../lib/lib/bootstrapValidator.js"></script>
     <!-- Validators -->
     
     
-    <script type="text/javascript" src="../Librerias/lib/validator/diferenteActividadPlanificacion.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/diferenteEntregable.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/stringLength.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/notEmpty.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/callback.js"></script
-    <script type="text/javascript" src="../Librerias/lib/validator/date.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/numeric.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/porcentajeMax.js"></script>
-    <script type="text/javascript" src="../Librerias/lib/validator/porcentajeMin.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/diferenteActividadPlanificacion.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/diferenteEntregable.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/stringLength.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/notEmpty.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/callback.js"></script
+    <script type="text/javascript" src="../lib/lib/validator/date.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/numeric.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/porcentajeMax.js"></script>
+    <script type="text/javascript" src="../lib/lib/validator/porcentajeMin.js"></script>
     <!-- JS -->
-    <script type="text/javascript" src="../Librerias/lib/funcion.js"></script>
+    <script type="text/javascript" src="../lib/lib/funcion.js"></script>
     
 
 
 
     <!-- Page-Level Plugin CSS - Dashboard -->
-    <link href="../Librerias/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <link href="../Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="../lib/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
     <!-- SB Admin CSS - Include with every page -->
-    <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
+    <link href="../lib/css/sb-admin.css" rel="stylesheet">
 
 </head>
 
@@ -85,7 +85,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                  <a class="navbar-brand" href="inicio_grupo_empresa.php">Inicio </a>
+                  <a class="navbar-brand" href="inicio-grupo-empresa.php">Inicio </a>
             </div>
             <!-- /.navbar-header -->
 
@@ -100,12 +100,12 @@
                         <?php
                             if (is_array($VerificarUsuario2)) {   
                         ?>
-                        <li><a href="ModificarGrupoEmpresa.php"><i class="fa fa-user fa-fw"></i> Modificar Datos personales</a>
+                        <li><a href="modificar-grupo-empresa.php"><i class="fa fa-user fa-fw"></i> Modificar Datos personales</a>
                         </li>
                         <?php
                             }else{
                         ?>
-                        <li><a href="ModificarSocio.php"><i class="fa fa-user fa-fw"></i> Modificar Datos personales</a>
+                        <li><a href="modificar-socio.php"><i class="fa fa-user fa-fw"></i> Modificar Datos personales</a>
                         </li>
                          <?php
                               }        
@@ -151,7 +151,7 @@
                                  
                                 </li>
                                 <li>
-                                    <a href="publicacion_grupo.php">Recepci&oacute;n Documentos </a>
+                                    <a href="publicacion-grupo.php">Recepci&oacute;n Documentos </a>
                                     
                                 </li>
                                
@@ -168,19 +168,19 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> Tareas<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="seleccionar_asesor.php">Seleccionar Asesor</a>
+                                    <a href="seleccionar-asesor.php">Seleccionar Asesor</a>
                                 </li>
                                 
                                  <li>
-                                     <a href="InscripcionGEProyecto.php">Inscribirse a proyecto</a>
+                                     <a href="inscripcion-GE-proyecto.php">Inscribirse a proyecto</a>
                                 </li>
                                 
                                 <li>
-                                     <a href="AnadirSocio.php">Añadir socios</a>
+                                     <a href="anadir-socio.php">Añadir socios</a>
                                 </li>
                                 
                                 <li>
-                                    <a href="AnadirRL.php">Seleccionar Representante legal</a>
+                                    <a href="anadir-rl.php">Seleccionar Representante legal</a>
                                 </li>
 
                             </ul>
@@ -195,7 +195,7 @@
                                                     
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="historia_actividades.php">Historia de actividades</a>
+                                    <a href="historia-actividades.php">Historia de actividades</a>
                                 </li>
                                 
                             </ul>  
@@ -298,13 +298,13 @@
                                         </div>
                                 
                                         <div class="form-group">
-                                            <button type="submit" name="submit" class="btn btn-primary" onclick="this.form.action='ModificarInfSocio.php'">  <span class="glyphicon glyphicon-ok"></span> Actualizar</button>
+                                            <button type="submit" name="submit" class="btn btn-primary" onclick="this.form.action='modificar-inf-socio.php'">  <span class="glyphicon glyphicon-ok"></span> Actualizar</button>
                                         </div>
                                 
                             </div>
                         </form>
-                        <script type="text/javascript" src="../Librerias/calendario2/jquery.js"></script>
-                        <script type="text/javascript" src="../Librerias/calendario2/jquery.datetimepicker.js"></script>
+                        <script type="text/javascript" src="../lib/calendario2/jquery.js"></script>
+                        <script type="text/javascript" src="../lib/calendario2/jquery.datetimepicker.js"></script>
                     </div>
                 </div>
                 <!-- /.col-lg-12 -->
@@ -321,19 +321,19 @@
 
 
     <!-- Core Scripts - Include with every page -->
-    <script src="../Librerias/js/jquery-1.10.2.js"></script>
-    <script src="../Librerias/js/bootstrap.min.js"></script>
-    <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
     <!-- Page-Level Plugin Scripts - Dashboard -->
-    <script src="../Librerias/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="../Librerias/js/plugins/morris/morris.js"></script>
+    <script src="../lib/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="../lib/js/plugins/morris/morris.js"></script>
 
     <!-- SB Admin Scripts - Include with every page -->
-    <script src="../Librerias/js/sb-admin.js"></script>
+    <script src="../lib/js/sb-admin.js"></script>
 
     <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
-    <script src="../Librerias/js/demo/dashboard-demo.js"></script>
+    <script src="../lib/js/demo/dashboard-demo.js"></script>
 
 </body>
 

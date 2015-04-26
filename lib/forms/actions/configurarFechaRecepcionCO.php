@@ -1,6 +1,6 @@
 <?php
 error_reporting (5); 	
-include '../../../Modelo/conexion.php';
+include '../../../modelo/conexion.php';
 
 $co=new conexion();
 $usuarioAse="leticia";

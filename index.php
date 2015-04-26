@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php 
  
-    include 'Modelo/conexion.php';
+    include 'modelo/conexion.php';
     $conectar = new conexion();
 ?>
 <html>
@@ -14,24 +14,24 @@
     <title>Sistema de Apoyo a la Empresa TIS</title>
 
     <!-- Core CSS - Include with every page -->
-    <link href="Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Librerias/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Page-Level Plugin CSS - Dashboard -->
-    <link href="Librerias/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <link href="Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="lib/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="lib/css/plugins/timeline/timeline.css" rel="stylesheet">
    
 
     <!-- SB Admin CSS - Include with every page -->
-    <link href="Librerias/css/sb-admin.css" rel="stylesheet">
+    <link href="lib/css/sb-admin.css" rel="stylesheet">
     
     
     
-        	<link href="Librerias/css/style11.css" rel="stylesheet" type="text/css" />
-		<link href="Librerias/css/tabla-div.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="Librerias/css/coin-slider.css" />
-                <link href="archivos/estilos.css" rel="stylesheet" type="text/css">
-                <script language="JavaScript" src="archivos/script.js" type="text/javascript"></script>
+        	<link href="lib/css/style11.css" rel="stylesheet" type="text/css" />
+		<link href="lib/css/tabla-div.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="lib/css/coin-slider.css" />
+                <link href="app/archivos/estilos.css" rel="stylesheet" type="text/css">
+                <script language="JavaScript" src="app/archivos/script.js" type="text/javascript"></script>
 
 </head>
 
@@ -46,7 +46,7 @@
 	
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                               <h2 ><IMG SRC="images/umss.png"><font color='white'> <strong>UNIVERSIDAD MAYOR DE SAN SIMON &nbsp;&nbsp;&nbsp;</strong></h2>
+                               <h2 ><IMG SRC="img/umss.png"><font color='white'> <strong>UNIVERSIDAD MAYOR DE SAN SIMON &nbsp;&nbsp;&nbsp;</strong></h2>
             </div>
             <!-- /.navbar-header -->
 
@@ -137,11 +137,11 @@
 
         <td style="width: 3%">
         <table style="height: 390px" border="0" cellpadding="0" cellspacing="0">
-        <tr style="height: 20%"><td><img id="masarriba" alt="Arriba Rapido" src="imagenes/masarriba.jpg" style="opacity:0.3; filter:alpha(opacity=29);" onmouseover="control_aviso('masarriba')" onmousedown="control_aviso('masarriba')" onmouseout="control_salir_aviso('masarriba')" /></td></tr>
-        <tr style="height: 20%"><td><img id="arriba" alt="Arriba" src="imagenes/arriba.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('arriba')" onmousedown="control_aviso('arriba')" onmouseout="control_salir_aviso('arriba')" /></td></tr>
-        <tr style="height: 20%"><td><img id="alto" alt="Detener" src="imagenes/alto.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('alto')" onmousedown="control_aviso('alto')" onmouseout="control_salir_aviso('alto')" /></td></tr>
-        <tr style="height: 20%"><td><img id="abajo" alt="Abajo" src="imagenes/abajo.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('abajo')" onmousedown="control_aviso('abajo')" onmouseout="control_salir_aviso('abajo')" /></td></tr>
-        <tr style="height: 20%"><td><img id="masabajo" alt="Abajo Rapido" src="imagenes/masabajo.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('masabajo')" onmousedown="control_aviso('masabajo')" onmouseout="control_salir_aviso('masabajo')" /></td></tr>
+        <tr style="height: 20%"><td><img id="masarriba" alt="Arriba Rapido" src="img/mas-arriba.jpg" style="opacity:0.3; filter:alpha(opacity=29);" onmouseover="control_aviso('masarriba')" onmousedown="control_aviso('masarriba')" onmouseout="control_salir_aviso('masarriba')" /></td></tr>
+        <tr style="height: 20%"><td><img id="arriba" alt="Arriba" src="img/arriba.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('arriba')" onmousedown="control_aviso('arriba')" onmouseout="control_salir_aviso('arriba')" /></td></tr>
+        <tr style="height: 20%"><td><img id="alto" alt="Detener" src="img/alto.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('alto')" onmousedown="control_aviso('alto')" onmouseout="control_salir_aviso('alto')" /></td></tr>
+        <tr style="height: 20%"><td><img id="abajo" alt="Abajo" src="img/abajo.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('abajo')" onmousedown="control_aviso('abajo')" onmouseout="control_salir_aviso('abajo')" /></td></tr>
+        <tr style="height: 20%"><td><img id="masabajo" alt="Abajo Rapido" src="img/mas-abajo.jpg" style="opacity:0.3; filter:alpha(opacity=29)" onmouseover="control_aviso('masabajo')" onmousedown="control_aviso('masabajo')" onmouseout="control_salir_aviso('masabajo')" /></td></tr>
         </table></table></table>
 
         <div class="article">
@@ -157,13 +157,13 @@
 
         <div class="form-group">
         <div align="center">
-        <button type="submit" name="ingresar"  class="btn btn-primary"  onclick=" location.href='Vista/RegistrarGrupoEmpresa.php' " id="btn-registrarUser"> <span class="glyphicon glyphicon-ok" ></span> REGISTRATE</button>
+        <button type="submit" name="ingresar"  class="btn btn-primary"  onclick=" location.href='vista/registrar-grupo-empresa.php' " id="btn-registrarUser"> <span class="glyphicon glyphicon-ok" ></span> REGISTRATE</button>
         </div></div>
         </div>     
         </div>
 
 
-        <form method="post" action="Vista/login.php">
+        <form method="post" action="vista/login.php">
         <div class="sidebar">
 
 
@@ -195,7 +195,7 @@
         </div>                                                  
 
         <div class="form-group">
-        <a href="Vista/RegistrarUsuario.php"><font color='green' size="1.5%">no eres usuario todavia? REGISTRATE</font></a>
+        <a href="vista/registrar-usuario.php"><font color='green' size="1.5%">no eres usuario todavia? REGISTRATE</font></a>
         <div align="right"> <hr>
         <button type="submit" name="ingresar" class="btn btn-primary" id="btn-registrarUser"> <span class="glyphicon glyphicon-ok"></span> Ingresar</button>
         </div></div>
@@ -219,7 +219,7 @@
 
         <div class="contenedor-tabla">
         <div class="contenedor-fila">
-        <div class="contenedor-columna2"><img src="images/logo-websiss.jpg" width="29" height="29" alt="" longdesc=\/></div>
+        <div class="contenedor-columna2"><img src="img/logo-websiss.jpg" width="29" height="29" alt="" longdesc=\/></div>
         <div class="contenedor-columna3"><li><a href="http://websis.umss.edu.bo/">webSISS Sistema de Información San Simón</a><br/> 
         webSISS UMSS</li></div>
         </div>
@@ -227,7 +227,7 @@
 
         <div class="contenedor-tabla">
         <div class="contenedor-fila">
-        <div class="contenedor-columna2"><img src="images/logo-cs.bmp" width="29" height="29" alt="" longdesc=\/></div>
+        <div class="contenedor-columna2"><img src="img/logo-cs.bmp" width="29" height="29" alt="" longdesc=\/></div>
         <div class="contenedor-columna3"><li><a href="http://www.cs.umss.edu.bo/">Carreras de Informática y Sistemas UMSS</a><br/>
         Pagina principal de la CS</li>
         </div>
@@ -236,7 +236,7 @@
 
         <div class="contenedor-tabla">
         <div class="contenedor-fila">
-        <div class="contenedor-columna2"><img src="images/logo-fcyt.gif" width="29" height="29" alt="" longdesc=\/></div>
+        <div class="contenedor-columna2"><img src="img/logo-fcyt.gif" width="29" height="29" alt="" longdesc=\/></div>
         <div class="contenedor-columna3"><li><a href="http://www.fcyt.umss.edu.bo/">Facultad de Ciencias y Tecnologia</a><br/>
         Pagina principal de la FCYT</li>
         </div>
@@ -245,7 +245,7 @@
 
         <div class="contenedor-tabla">
         <div class="contenedor-fila">
-        <div class="contenedor-columna2"><img src="images/userpic.gif" width="29" height="29" alt="" longdesc=\/></div>
+        <div class="contenedor-columna2"><img src="img/userpic.gif" width="29" height="29" alt="" longdesc=\/></div>
         <div class="contenedor-columna3"><li><a href="http://enlinea.umss.edu.bo/moodle2/">MOODLE 2 - UMSS</a><br/>
         Pagina de moodle2</li>
         </div>
@@ -265,7 +265,7 @@
         <div class="contenedor-tabla">
         <div class="contenedor-fila">
 
-        <div class="contenedor-columna3"><li><a href="Vista/verificar_nombre.php">Verificar Nombre Grupo Empresa</a><br/> 
+        <div class="contenedor-columna3"><li><a href="vista/verificar-nombre.php">Verificar Nombre Grupo Empresa</a><br/> 
         Verificar Nombre de Grupo Empresa Disponible</li></div>
         </div>
         </div>
@@ -301,19 +301,19 @@
 
     </div>
 
-    <script src="Librerias/js/jquery-1.10.2.js"></script>
-    <script src="Librerias/js/bootstrap.min.js"></script>
-    <script src="Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="lib/js/jquery-1.10.2.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
     <!-- Page-Level Plugin Scripts - Dashboard -->
-    <script src="Librerias/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="Librerias/js/plugins/morris/morris.js"></script>
+    <script src="lib/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="lib/js/plugins/morris/morris.js"></script>
 
     <!-- SB Admin Scripts - Include with every page -->
-    <script src="Librerias/js/sb-admin.js"></script>
+    <script src="lib/js/sb-admin.js"></script>
 
     <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
-    <script src="Librerias/js/demo/dashboard-demo.js"></script>
+    <script src="lib/js/demo/dashboard-demo.js"></script>
 
 </body>
 

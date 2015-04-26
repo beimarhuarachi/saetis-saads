@@ -1,7 +1,7 @@
 <?php
 
-include '../Modelo/conexion_pd.php';
-include '../Modelo/crear_oc_pdf.php';
+include '../modelo/conexion-pd.php';
+include '../modelo/crear-oc-pdf.php';
 session_start();
 
 $conexion = new conexion();
@@ -22,7 +22,7 @@ if (isset($_POST['lista']))
   	    if (isset($_POST['lugar']))
             {
                 $existeF = FALSE;
-                $nombreF = '../Repositorio/asesor/NotificacionConformidad.tex';
+                $nombreF = '../app/Repositorio/asesor/NotificacionConformidad.tex';
                 if (file_exists($nombreF))
                 {
                     $existeF = TRUE;
@@ -113,7 +113,7 @@ if (isset($_POST['lista']))
                                 $remplazo['sexto_p'] = intval($califi [5]);
                                 $remplazo['septimo_p'] = intval($califi [6]);
 
-                                $ruta ="../Repositorio/asesor";
+                                $ruta ="../app/Repositorio/asesor";
                                 chdir($ruta);
 
                                 $id = "NotificacionConformidad";
@@ -169,7 +169,7 @@ if (isset($_POST['lista']))
                                     //rename("NotificacionConformidad.pdf", $file);
                                    rename("NotificacionConformidad.pdf", $rutaD.$pdf );
 
-                                   $nruta = "../Repositorio/".$nombreUGE."/NC/"."NotificacionConformidad.pdf";
+                                   $nruta = "../app/Repositorio/".$nombreUGE."/NC/"."NotificacionConformidad.pdf";
                                    $fecha = date('Y-m-d');
                                    $hora  = date("G:H:i");
                                    $visible = "TRUE";

@@ -2,8 +2,8 @@
 
 <?php
 
-	require_once '../Modelo/conexion.php';
-	require_once '../Modelo/Model/GrupoEmpresa.php';   
+	require_once '../modelo/conexion.php';
+	require_once '../modelo/Model/GrupoEmpresa.php';   
 	session_start();
 	$usuario = $_SESSION['usuario'];
      
@@ -44,7 +44,7 @@
                 		<td>'.$ge->getNombreCorto().'</td>
                 		<td>'.$rowGrupos[1].'</td>
                 		<td>
-                			<a href="../Vista/lista_evaluacion.php" class="btn btn-xs btn-success">Revision de Hito</a>
+                			<a href="../vista/lista-evaluacion.php" class="btn btn-xs btn-success">Revision de Hito</a>
                 		</td>
                 		<td>
                 			'.$btnRepor.'

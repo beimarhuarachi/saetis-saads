@@ -1,6 +1,6 @@
 <?php
 
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
     session_start();
     
@@ -48,7 +48,7 @@
                             $_SESSION['contrasena'] = $contrasena;
                             $_SESSION['asesor'] = $permisosenbase;
                             $peticion1 = $conectar->consulta("INSERT INTO `sesion` (`ID_S`, `NOMBRE_U`, `FECHA_S`, `HORA_S`, `IP_S`)" . " VALUES (NULL, '$usuario', '$fecha', '$hora', '$ip');");
-                            echo'<html><head><meta http-equiv="REFRESH" content="0;url=inicio_asesor.php"></head></html>';
+                            echo'<html><head><meta http-equiv="REFRESH" content="0;url=inicio-asesor.php"></head></html>';
                         
                     }  
                     else
@@ -59,7 +59,7 @@
                             $_SESSION['contrasena'] = $contrasena;
                             $_SESSION['grupoEmpresa'] = $permisosenbase;
                             $peticion1 = $conectar->consulta("INSERT INTO `sesion` (`ID_S`, `NOMBRE_U`, `FECHA_S`, `HORA_S`, `IP_S`)" . " VALUES (NULL, '$usuario', '$fecha', '$hora', '$ip');");
-                            echo'<html><head><meta http-equiv="REFRESH" content="0;url=inicio_grupo_empresa.php"></head></html>';
+                            echo'<html><head><meta http-equiv="REFRESH" content="0;url=inicio-grupo-empresa.php"></head></html>';
                             
                         }
                         else

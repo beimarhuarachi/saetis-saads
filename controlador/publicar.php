@@ -1,6 +1,6 @@
 <?php
 header('Location: http://localhost/ProyectoSprint3/Vista/publicar_asesor.php'); 
-	require_once('../Modelo/publicacion_class.php');
+	require_once('../modelo/publicacion-class.php');
 	
 	
 

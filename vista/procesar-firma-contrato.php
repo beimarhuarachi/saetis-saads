@@ -1,6 +1,6 @@
 <?php  
 
-	require_once '../Modelo/conexion.php';
+	require_once '../modelo/conexion.php';
 	session_start();        
 	$UsuarioActivo = $_SESSION['usuario'];
 	$con = new conexion();
@@ -19,14 +19,14 @@
 		$con->consulta("UPDATE inscripcion_proyecto SET ESTADO_CONTRATO = 'Firmado' WHERE NOMBRE_U='$nombreUGE[0]'");
 
 		echo   '<script>alert("Se registro la firma del contrato correctamente")
-					window.location="../Vista/RegistrarFirma.php";
+					window.location="../vista/registrar-firma.php";
 			    </script>';
 	}
 	else
 	{
 		echo   '<script>
 					alert("Todavia no se ha emitido el contrato para la grupo empresa correspondiente");
-					window.location="../Vista/RegistrarFirma.php";
+					window.location="../vista/registrar-firma.php";
 				</script>';
 
 	}

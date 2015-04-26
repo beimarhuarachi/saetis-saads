@@ -9,9 +9,9 @@
     $dirGE = $_POST['direccion'];
     $contGE = $_POST['contrasena1'];
     
-    include '../Modelo/conexion.php';
-    require '../Vista/PHPMailerAutoload.php';
-    require '../Vista/class.phpmailer.php';
+    include '../modelo/conexion.php';
+    require '../vista/PHPMailerAutoload.php';
+    require '../vista/class-phpmailer.php';
     
     $conexion = new conexion();
     
@@ -69,7 +69,7 @@
                     $result->execute();
 
                     $conn->commit();
-                    echo"<script type=\"text/javascript\">alert('El registro ha sido satisfactorio'); window.location='RegistrarGrupoEmpresa.php';</script>";
+                    echo"<script type=\"text/javascript\">alert('El registro ha sido satisfactorio'); window.location='registrar-grupo-empresa.php';</script>";
 
                 } catch (PDOException $e) {
                     // si ocurre un error hacemos rollback para anular todos los insert
@@ -79,19 +79,19 @@
              }
              else
              {                
-                echo"<script type=\"text/javascript\">alert('El nombre largo ya esta registrado'); window.location='RegistrarGrupoEmpresa.php';</script>";
+                echo"<script type=\"text/javascript\">alert('El nombre largo ya esta registrado'); window.location='registrar-grupo-empresa.php';</script>";
              }
              
          }
          else
          {
-                echo"<script type=\"text/javascript\">alert('El nombre corto ya esta registrado'); window.location='RegistrarGrupoEmpresa.php';</script>";
+                echo"<script type=\"text/javascript\">alert('El nombre corto ya esta registrado'); window.location='registrar-grupo-empresa.php';</script>";
          }
          
      }
      else
      {
-        echo"<script type=\"text/javascript\">alert('El nombre de usuario ya esta registrado'); window.location='RegistrarGrupoEmpresa.php';</script>";
+        echo"<script type=\"text/javascript\">alert('El nombre de usuario ya esta registrado'); window.location='registrar-grupo-empresa.php';</script>";
      }
     
 ?>

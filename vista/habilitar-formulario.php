@@ -2,7 +2,7 @@
 
 session_start();
 $UsuarioActivo = $_SESSION['usuario'];
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 
 $Form = $_POST['formulario'];
                                                   
@@ -15,7 +15,7 @@ $Form = $_POST['formulario'];
     {
 
         echo '<script>alert("Se habilito el formulario para su uso");</script>';
-        echo '<script>window.location = "../Vista/SeleccionarFormulario.php"</script>';
+        echo '<script>window.location = "../vista/seleccionar-formulario.php"</script>';
       
     }
     

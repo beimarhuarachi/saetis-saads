@@ -1,6 +1,6 @@
 <?php
 	
-	require_once '../Modelo/conexion.php';
+	require_once '../modelo/conexion.php';
 
 	$funcion = $_POST['funcion'];
 	$grupoE = $_POST['grupoE'];

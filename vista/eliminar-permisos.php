@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $con=new conexion();
     session_start();
 
@@ -19,7 +19,7 @@ $peticion = $con->consulta("DELETE FROM `permisos` WHERE id_permiso=$delRol");
  echo'
 <html>
 	<head>
-		<meta http-equiv="REFRESH" content="0;url=lista_roles.php">
+		<meta http-equiv="REFRESH" content="0;url=lista-roles.php">
 	</head>
 </html>
 

@@ -1,5 +1,5 @@
 <?php
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conect = new conexion();
 session_start();
 
@@ -16,7 +16,7 @@ $idAdmin = $_GET['id_us'];
 
          
          echo '<script>alert("Se elimino al administrador correctamente");</script>';
-         echo '<script>window.location="../Vista/lista_administradores.php";</script>';
+         echo '<script>window.location="../vista/lista-administradores.php";</script>';
 	
  
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-  include '../Modelo/conexion.php';
+  include '../modelo/conexion.php';
   session_start();
   $conect = new conexion();
          $userAct = $_SESSION['usuario'];
@@ -41,7 +41,7 @@
               $guardar = $conect->consulta("INSERT INTO periodo (ID_R,fecha_p,hora_p) VALUES ('$idDoc','$fechap','$horap')") or
               die("Error al s");
 
-              header("location:../Vista/publicar_asesor.php");
+              header("location:../vista/publicar-asesor.php");
 
 
             }
@@ -82,7 +82,7 @@
                $guardar = $conect->consulta("INSERT INTO periodo (ID_R,fecha_p,hora_p) VALUES ('$idDoc','$fechap','$horap')") or
                die("Error al s");
 
-                header("location:../Vista/publicar_asesor.php");
+                header("location:../vista/publicar-asesor.php");
               
               }
               else{
@@ -124,7 +124,7 @@
                       $guardar = $conect->consulta("INSERT INTO periodo (ID_R,fecha_p,hora_p) VALUES ('$idDoc','$fechap','$horap')") or
                       die("Error al s");
 
-                        header("location:../Vista/publicar_asesor.php");
+                        header("location:../vista/publicar-asesor.php");
 
                   }
                 }
@@ -167,7 +167,7 @@
                $guardar = $conect->consulta("INSERT INTO periodo (ID_R,fecha_p,hora_p) VALUES ('$idDoc','$fechap','$horap')") or
                die("Error al s");
 
-                header("location:../Vista/publicar_asesor.php");
+                header("location:../vista/publicar-asesor.php");
               
               }
               else{
@@ -209,7 +209,7 @@
                       $guardar = $conect->consulta("INSERT INTO periodo (ID_R,fecha_p,hora_p) VALUES ('$idDoc','$fechap','$horap')") or
                       die("Error al s");
 
-                        header("location:../Vista/publicar_asesor.php");
+                        header("location:../vista/publicar-asesor.php");
 
                   }
                 }

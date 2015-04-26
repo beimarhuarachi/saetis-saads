@@ -1,5 +1,5 @@
 <?php
-	require_once '../Modelo/conexion.php';
+	require_once '../modelo/conexion.php';
 
 	class Reporte {
 		var $conexion;

@@ -1,10 +1,10 @@
 <?php
-  	require_once '../Modelo/Model/Planificacion.php';
-  	require_once '../Modelo/Model/Entregable.php';
-    require_once '../Modelo/Model/Registro.php';
-    require_once '../Modelo/Model/Precio.php';
-    require_once '../Modelo/Model/FechaRealizacion.php';
-    require_once '../Modelo/conexion.php';
+  	require_once '../modelo/Model/Planificacion.php';
+  	require_once '../modelo/Model/Entregable.php';
+    require_once '../modelo/Model/Registro.php';
+    require_once '../modelo/Model/Precio.php';
+    require_once '../modelo/Model/FechaRealizacion.php';
+    require_once '../modelo/conexion.php';
     session_start();
         
     $uActivo = $_SESSION['usuario'];

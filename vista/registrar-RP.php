@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     session_start();
     
     $nombreU = $_SESSION['usuario'];
@@ -10,7 +10,7 @@
     
     if(strcmp($repL[0],"")!=0)
     {
-        echo"<script type=\"text/javascript\">alert('Usted ya registro un representante legal'); window.location='AnadirRL.php';</script>";
+        echo"<script type=\"text/javascript\">alert('Usted ya registro un representante legal'); window.location='anadir-rl.php';</script>";
     }
     else
     {
@@ -18,12 +18,12 @@
         if(strnatcasecmp($nomRL, "Seleccione un representante legal")!=0)
         {
                $conexion->consulta(" UPDATE grupo_empresa SET REPRESENTANTE_LEGAL_GE='$nomRL' WHERE NOMBRE_U = '$nombreU'");   
-               echo"<script type=\"text/javascript\">alert('Se registro satisfactoriamente'); window.location='AnadirRL.php';</script>";
+               echo"<script type=\"text/javascript\">alert('Se registro satisfactoriamente'); window.location='anadir-rl.php';</script>";
      
         }
         else
         {
-            echo"<script type=\"text/javascript\">alert('Por favor, seleccione un representante legal'); window.location='AnadirRL.php';</script>";
+            echo"<script type=\"text/javascript\">alert('Por favor, seleccione un representante legal'); window.location='anadir-rl.php';</script>";
      
         }
      }

@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-include '../Librerias/fpdf.php';
+include '../lib/fpdf.php';
 $nombreEmpresa=$_POST['lista'];
 $fecha=$_POST['fecha'];
 $hora=$_POST['hora'];

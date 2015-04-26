@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conect = new conexion();
 //Crear variables--------------------------
 $usuario = $_SESSION['usuario'];
@@ -99,7 +99,7 @@ $idAsesor = $_GET['id_us'];
             $delUser = $conect->consulta("DELETE FROM usuario WHERE NOMBRE_U = '$idAsesor' ");
             
             echo '<script>alert("Se elimino al asesor correctamente!!")</script>';
-            echo '<script>window.location="../Vista/lista_asesores.php";</script>';
+            echo '<script>window.location="../vista/lista-asesores.php";</script>';
             
             die();
             
@@ -107,7 +107,7 @@ $idAsesor = $_GET['id_us'];
         
         if($op == 'no')
         {
-            header('location:../Vista/lista_asesores.php');
+            header('location:../vista/lista-asesores.php');
             die();
         }
          
@@ -119,8 +119,8 @@ $idAsesor = $_GET['id_us'];
     if(is_array($regisAse))
     {
         echo '<script>
-            var pagina =  "eliminar_asesor.php?id_us='.$idAsesor.'&op=si"
-            var pagina2 = "eliminar_asesor.php?id_us='.$idAsesor.'&op=no"
+            var pagina =  "eliminar-asesor.php?id_us='.$idAsesor.'&op=si"
+            var pagina2 = "eliminar-asesor.php?id_us='.$idAsesor.'&op=no"
             if(confirm("El asesor tiene registros...desea eliminarlo de todas formas??"))
             {
                 location.href = pagina
@@ -190,7 +190,7 @@ $idAsesor = $_GET['id_us'];
         
         
         echo '<script>alert("Se elimino al asesor correctamente!!")</script>';
-    echo '<script>window.location="../Vista/lista_asesores.php";</script>';
+    echo '<script>window.location="../vista/lista-asesores.php";</script>';
     }
          
 ?>

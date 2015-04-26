@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conectar = new conexion();
 //Crear variables--------------------------
 
@@ -19,7 +19,7 @@ $addasesor = $_POST['id_rol'];
 	 echo'
 	<html>
 		<head>
-			<meta http-equiv="REFRESH" content="0;url=lista_roles.php">
+			<meta http-equiv="REFRESH" content="0;url=lista-roles.php">
 		</head>
 	</html>';
 

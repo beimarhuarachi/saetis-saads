@@ -8,9 +8,9 @@
     $Apellido = $_POST['apellido'];
     $Telefono = $_POST['telefono'];
 
-    include '../Modelo/conexion.php';
-    require '../Vista/PHPMailerAutoload.php';
-    require '../Vista/class.phpmailer.php';
+    include '../modelo/conexion.php';
+    require '../vista/PHPMailerAutoload.php';
+    require '../vista/class-phpmailer.php';
     
     $conect = new conexion();
     $mail = new PHPMailer();
@@ -117,7 +117,7 @@
             $conect->consulta("INSERT INTO criteriocalificacion(NOMBRE_U,NOMBRE_CRITERIO_C,TIPO_CRITERIO) VALUES('$Name','PUNTAJE','4')");
                
             echo '<script>alert("Su solicitud se envio correctamente");</script>';
-            echo '<script>window.location="../Vista/RegistrarUsuario.php";</script>';
+            echo '<script>window.location="../vista/registrar-usuario.php";</script>';
           }
         
     }
@@ -125,7 +125,7 @@
 
 
         echo '<script>alert("El nombre de usuario ya esta registrado");</script>';
-        echo '<script>window.location="../Vista/RegistrarUsuario.php";</script>';
+        echo '<script>window.location="../vista/registrar-usuario.php";</script>';
         
 
     }
@@ -133,7 +133,7 @@
     else
     {
         echo '<script>alert("Correo Ingresado no Valido");</script>';
-        echo '<script>window.location="../Vista/RegistrarUsuario.php";</script>';
+        echo '<script>window.location="../vista/registrar-usuario.php";</script>';
     }
    
 ?>

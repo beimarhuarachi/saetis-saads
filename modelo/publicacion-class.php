@@ -1,7 +1,7 @@
 <?php 
-include ('conexion_pd.php');
+include ('conexion-pd.php');
 require('registro.php');
-require('guardarDocumento.php');
+require('guardar-documento.php');
 require('descripcion.php');
 
 class Publicacion 

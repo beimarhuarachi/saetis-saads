@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
     session_start();
 
@@ -24,7 +24,7 @@ $peticion = $conectar->consulta ("DELETE FROM grupo_empresa WHERE grupo_empresa.
  echo'
 <html>
 	<head>
-		<meta http-equiv="REFRESH" content="0;url=lista_usuarios.php">
+		<meta http-equiv="REFRESH" content="0;url=lista-usuarios.php">
 	</head>
 </html>';
 ?>

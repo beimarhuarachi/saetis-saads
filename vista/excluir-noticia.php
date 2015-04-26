@@ -1,5 +1,5 @@
 <?php
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conect = new conexion();
 $noticia = $_GET['id'];
 

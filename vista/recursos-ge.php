@@ -9,14 +9,14 @@
     <title>Sistema de Apoyo a la Empresa TIS</title>
 
     <!-- Core CSS - Include with every page -->
-    <link href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Librerias/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Page-Level Plugin CSS - Dashboard -->
-    <link href="../Librerias/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <link href="../Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="../lib/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
        <!-- SB Admin CSS - Include with every page -->
-    <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
+    <link href="../lib/css/sb-admin.css" rel="stylesheet">
 
 </head>
 
@@ -90,7 +90,7 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-files-o "></i> Documentos <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../Vista/RegistrarDocumentosRequeridos.php">Registrar Documentos</a>
+                                    <a href="../vista/registrar-documentos-requeridos.php">Registrar Documentos</a>
                                 </li>
                                 
                                 <li>
@@ -116,14 +116,14 @@
                                     <a href="#">Recepci&oacute;n Documentos <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="ConfiguracionFechasRecepcion.php" ><span class="fa fa-calendar-o"></span> Configuraci&oacute;n de Fechas para la Recepci&oacute;n de Documentos</a>
+                                            <a href="configuracion-fechas-recepcion.php" ><span class="fa fa-calendar-o"></span> Configuraci&oacute;n de Fechas para la Recepci&oacute;n de Documentos</a>
                                             
                                         </li>
                                         <li>
                                             <a href="#">Modificar Enlace Documento</a>
                                         </li>
                                         <li>
-                                            <a href="documentos_recibidos.php">Documentos Recividos</a>
+                                            <a href="documentos-recibidos.php">Documentos Recividos</a>
                                         </li>
                                        
                                     </ul>
@@ -138,7 +138,7 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> Tareas<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="orden_cambio.php">Emitir Orden de Cambio</a>
+                                    <a href="orden-de-cambio.php">Emitir Orden de Cambio</a>
                                 </li>
                                 <li>
                                     <a href="#">Emitir Notificacion de Conformidad</a>
@@ -158,25 +158,25 @@
                                         <a href="#">Evaluacion Grupo Empresa<span class="fa arrow"></span></a>
                                             <ul class="nav nav-third-level">
                                                 <li>
-                                                    <a href="CrearModalidadEvaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
+                                                    <a href="crear-modalidad-evaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
                                                 </li>
                                                 <li>
-                                                    <a href="CrearModalidadCalificacion.php"> Criterio de Calificaci&oacute;n</a>
+                                                    <a href="crear-modalidad-calificacion.php"> Criterio de Calificaci&oacute;n</a>
                                                 </li>
                                                  <li>
-                                                    <a href="EliminarCriterioCalificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
+                                                    <a href="eliminar-criterio-calificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
                                                 </li>
                                                 <li>
-                                                    <a href="CrearFormulario.php">Crear Formulario de Evaluacion</a>
+                                                    <a href="crear-formulario.php">Crear Formulario de Evaluacion</a>
                                                 </li>
                                                 <li>
-                                                    <a href="EliminarFormulario.php">Eliminar Formulario de Evaluacion</a>
+                                                    <a href="eliminar-formulario.php">Eliminar Formulario de Evaluacion</a>
                                                 </li>
                                                 <li>
-                                                    <a href="SeleccionarFormulario.php"> Seleccionar Formulario de Evaluacion </a>   
+                                                    <a href="seleccionar-formulario.php"> Seleccionar Formulario de Evaluacion </a>   
                                                 </li>
                                                 <li>
-                                                    <a href="EvaluarGrupoEmpresa.php">Evaluar Grupo Empresa </a>   
+                                                    <a href="evaluar-grupo-empresa.php">Evaluar Grupo Empresa </a>   
                                                 </li>
                                             </ul>
                                 </li>
@@ -230,7 +230,7 @@
              <fieldset>
             <ul class="media-list">
                 <li class="">
-                  <img class="img-rounded" width="35px" height="35px" alt=" " src="../Librerias/images/ico/ade.jpg"></img>
+                  <img class="img-rounded" width="35px" height="35px" alt=" " src="../lib/images/ico/ade.jpg"></img>
                   <a class="link" href="" onclick=""> FETIS
                   <span class="instancename">
                   <span class="accesshide "></span>
@@ -240,7 +240,7 @@
                  </li>
              </br>
                 <li class="">
-                  <img class="img-rounded" width="35px" height="35px" alt=" " src="../Librerias/images/ico/pdf.jpg"></img>
+                  <img class="img-rounded" width="35px" height="35px" alt=" " src="../lib/images/ico/pdf.jpg"></img>
                   <a class="link" href="" onclick=""> PETIS
                   <span class="instancename">
                   <span class="accesshide "></span>
@@ -268,19 +268,19 @@
     <!-- /#wrapper -->
 
     <!-- Core Scripts - Include with every page -->
-   <script src="../Librerias/js/jquery-1.10.2.js"></script>
-    <script src="../Librerias/js/bootstrap.min.js"></script>
-    <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+   <script src="../lib/js/jquery-1.10.2.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
     <!-- Page-Level Plugin Scripts - Dashboard -->
-    <script src="../Librerias/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="../Librerias/js/plugins/morris/morris.js"></script>
+    <script src="../lib/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="../lib/js/plugins/morris/morris.js"></script>
 
     <!-- SB Admin Scripts - Include with every page -->
-    <script src="../Librerias/js/sb-admin.js"></script>
+    <script src="../lib/js/sb-admin.js"></script>
 
     <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
-    <script src="../Librerias/js/demo/dashboard-demo.js"></script>
+    <script src="../lib/js/demo/dashboard-demo.js"></script>
 
 </body>
 

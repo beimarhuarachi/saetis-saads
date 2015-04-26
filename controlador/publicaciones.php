@@ -1,6 +1,6 @@
 <?php
 //include('../Vista/recursosasesor.php');
-include('../Modelo/crearimagen.php');
+include('../modelo/crear-imagen.php');
 
     $conexion = mysql_connect("localhost","root","");
    // $conexion = mysql_connect("192.168.2.5","mbittle","5rtZAGYq");
@@ -28,7 +28,7 @@ include('../Modelo/crearimagen.php');
 
 			//var_dump($tipo);
 			//die();
-			$icono = '../Librerias/images/ico/'.$tipo.'.jpg';
+			$icono = '../lib/images/ico/'.$tipo.'.jpg';
 
 			// echo 'Nombre >>'  .$key['NOMBRE_R']. ' DESCRIPCION_D >> ' .$key['DESCRIPCION_D'].'RUTA >> '.$key['RUTA_D'].' ICONO >> '.$icono.'<br>';
 			 

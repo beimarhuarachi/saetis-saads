@@ -1,6 +1,6 @@
 <?php
 session_start();
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
     $name = $_POST['nombreUsuario'];
     $RealName = $_POST['nombreReal'];
@@ -24,7 +24,7 @@ $conectar->consulta("UPDATE usuario_rol SET NOMBRE_U='$updLogin'
 WHERE  NOMBRE_U='$updLogin'");
 
 
-echo"<script type=\"text/javascript\">alert('Se modificaron los datos satisfactoriamente'); window.location='inicio_asesor.php';</script>";
+echo"<script type=\"text/javascript\">alert('Se modificaron los datos satisfactoriamente'); window.location='inicio-asesor.php';</script>";
 
 
 

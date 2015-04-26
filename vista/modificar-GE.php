@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     session_start();
 
     $conexion = new conexion();
@@ -13,6 +13,6 @@
     $conexion->consulta(" UPDATE usuario SET PASSWORD_U='$contrasena', TELEFONO_U='$telef', CORREO_ELECTRONICO_U='$correo' WHERE NOMBRE_U = '$nombreUGE'");
     $conexion->consulta(" UPDATE grupo_empresa SET DIRECCION_GE='$direc' WHERE NOMBRE_U = '$nombreUGE'");
                       
-    echo"<script type=\"text/javascript\">alert('Se modificaron los datos satisfactoriamente'); window.location='ModificarGrupoEmpresa.php';</script>";
+    echo"<script type=\"text/javascript\">alert('Se modificaron los datos satisfactoriamente'); window.location='modificar-grupo-empresa.php';</script>";
          
 ?>

@@ -1,6 +1,6 @@
 <?php
-	require_once '../Modelo/Model/Asistencia.php';
-	require_once '../Modelo/Model/Reporte.php';
+	require_once '../modelo/Model/Asistencia.php';
+	require_once '../modelo/Model/Reporte.php';
 
 	$funcion = $_POST['funcion'];
 	$registro = $_POST['registro'];

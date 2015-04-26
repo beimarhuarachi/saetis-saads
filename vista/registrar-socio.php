@@ -6,7 +6,7 @@ session_start();
     $apellidoS = $_POST['apellido'];
     
 
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
    
     $conect = new conexion();
 
@@ -40,7 +40,7 @@ session_start();
 
 
             $conn->commit();
-            echo"<script type=\"text/javascript\">alert('El registro ha sido satisfactorio'); window.location='AnadirSocio.php';</script>";
+            echo"<script type=\"text/javascript\">alert('El registro ha sido satisfactorio'); window.location='anadir-socio.php';</script>";
         } catch (PDOException $e) {
            // si ocurre un error hacemos rollback para anular todos los insert
             $conn->rollback();

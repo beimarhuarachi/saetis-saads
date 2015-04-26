@@ -1,7 +1,7 @@
 <?php
  
 session_start();
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conect = new conexion();
 
 
@@ -42,7 +42,7 @@ if($peticion_regis>0){
 	 //volver a la pagina---------------
          
          echo '<script>alert("Se elimino el documento correctamente");</script>';
-         echo '<script>window.location="../Vista/documentos_generados.php";</script>';
+         echo '<script>window.location="../vista/documentos-generados.php";</script>';
 	
 
 

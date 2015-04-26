@@ -7,7 +7,7 @@
     echo $nombreUsuario;
     echo $password;
 
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
    
     
     $conect = new conexion();
@@ -38,7 +38,7 @@
             {
                 session_start();
                 session_name($nameUsuario);
-                header('location:inicio_grupo_empresa.php');
+                header('location:inicio-grupo-empresa.php');
                 
             }
             
@@ -46,7 +46,7 @@
             {
                 session_start();
                 session_name($nameUsuario);
-                 header('location:inicio_asesor.php');
+                 header('location:inicio-asesor.php');
                 
             }
             if($VerificarRol2[0] == "administrador")

@@ -6,8 +6,8 @@
  * and open the template in the editor.
  */
 
-include '../Librerias/fpdf.php';
-include '../Modelo/conexion.php';
+include '../lib/fpdf.php';
+include '../modelo/conexion.php';
 
 $nombreEmpresa=$_POST['lista'];
 
@@ -132,7 +132,7 @@ $pdf->MultiCell(130, 5, utf8_decode('Paralelamente se solicita, indicar el dia d
 $pdf->Cell(30);
 $pdf->MultiCell(130,5,  utf8_decode('Asímismo, recordar que para el día de la firma del contrato se requiere de una copia física de la Boleta de Garantía, emitida a favor de TIS por parte de '."$nombreEmpresa."));
 
-$rutaDirectorio="../Repositorio/$idGrupoEmpresa/NC";
+$rutaDirectorio="../app/Repositorio/$idGrupoEmpresa/NC";
 if (!file_exists($rutaDirectorio)) {
     mkdir($rutaDirectorio, 0777,TRUE);
 }
@@ -148,7 +148,7 @@ try {
     
     $visualizable=TRUE;
     $descargable=TRUE;
-    $rutaDocumento="/Repositorio/".$idGrupoEmpresa."/NC/".$idGrupoEmpresa."_NC.pdf";
+    $rutaDocumento="/app/Repositorio/".$idGrupoEmpresa."/NC/".$idGrupoEmpresa."_NC.pdf";
     $con->consulta("INSERT INTO `registro` (NOMBRE_U,TIPO_T,ESTADO_E,NOMBRE_R,FECHA_R,HORA_R)  VALUES ('$idGrupoEmpresa','notificacion de conformidad','habilitado','".$idGrupoEmpresa."_NC.pdf','".date("Y-m-d")."','".  date("G:H:i")."')");
     $con->consulta("INSERT INTO `documento` (ID_R,TAMANIO_D,RUTA_D,VISUALIZABLE_D,DESCARGABLE_D) VALUES ($idRegistro,4444,'$rutaDocumento','$visualizable','$descargable')");
 } catch (Exception $exc) {
@@ -157,7 +157,7 @@ try {
 
 $pdf->Output("$rutaDirectorio/".$idGrupoEmpresa."_NC.pdf",'F');
 $con->cerrarConexion();
-echo "<script type=\"text/javascript\">alert('Notificaci\u00f3n de conformidad enviada....'); window.location='notificacion_conformidad.php';</script>";
+echo "<script type=\"text/javascript\">alert('Notificaci\u00f3n de conformidad enviada....'); window.location='notificacion-conformidad.php';</script>";
 
 
 ?>

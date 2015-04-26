@@ -1,7 +1,7 @@
  <?php  
     session_start();
     $uActivo = $_SESSION['usuario'];
-    include '../Modelo/conexion.php';  
+    include '../modelo/conexion.php';  
     $conectar=new conexion();
     
     
@@ -58,7 +58,7 @@
              $conectar->consulta("UPDATE entrega SET `ENTREGADO_P` = '1' WHERE `entrega`.`ID_R` = '$IDPago' AND `entrega`.`ENTREGABLE_P` = '$entregable'");
             }   
           
-          echo"<script type=\"text/javascript\">alert('La evaluacion se guardo exitosamente'); window.location='lista_evaluacion.php';</script>";
+          echo"<script type=\"text/javascript\">alert('La evaluacion se guardo exitosamente'); window.location='lista-evaluacion.php';</script>";
  ?> 
 
                       		

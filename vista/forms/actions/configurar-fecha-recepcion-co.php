@@ -1,6 +1,6 @@
 <?php
 error_reporting (5); 	
-include '../../../Modelo/conexion.php';
+include '../../../modelo/conexion.php';
 
 $co=new conexion();
 $usuarioAse = $_POST['usuarioAsesor'];
@@ -88,7 +88,7 @@ if(isset($aceptar))
                         **/
                         echo "<SCRIPT LANGUAGE='javascript'>". 
                         " alert('Exito,la configuracion de $documentoR fue registrada exitosamente.');".
-                        " document.location=('../../ConfiguracionFechasRecepcion.php');</SCRIPT>";
+                        " document.location=('../../configuracion-fechas-recepcion.php');</SCRIPT>";
                         $SQL="Update plazo".
                                 " Set fecha_inicio_pl='$fechaIni'".
                                 "Where id_R='$idDocumento'";
@@ -120,9 +120,9 @@ if(isset($aceptar))
     {
         echo "<SCRIPT LANGUAGE='javascript'>". 
                         " alert('Usted no selecciono ningun documento valido a configurar');".
-                        " document.location=('../../ConfiguracionFechasRecepcion.php');</SCRIPT>";
+                        " document.location=('../../configuracion-fechas-recepcion.php');</SCRIPT>";
     }
   
 }
-//header('Location: ../../ConfiguracionFechasRecepcion.php');  
+//header('Location: ../../configuracion-fechas-recepcion.php');  
 ?>

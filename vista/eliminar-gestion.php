@@ -1,5 +1,5 @@
 <?php
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
     session_start();
     $codigo='';
@@ -19,5 +19,5 @@ $peticion1 = $conectar-> consulta("SELECT CODIGO_P FROM proyecto WHERE ID_G='".$
         $peticion3 = $conectar-> consulta("DELETE FROM gestion WHERE ID_G='".$delRol."'");
 
          echo '<script>alert("Se elimino  correctamente");</script>';
-         echo '<script>window.location="../Vista/add_gestion.php";</script>';
+         echo '<script>window.location="../vista/add-gestion.php";</script>';
 ?>

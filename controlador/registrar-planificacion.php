@@ -1,12 +1,12 @@
 <?php
 	date_default_timezone_set("America/La_Paz");
-	require_once '../Modelo/Model/Planificacion.php';
-	require_once '../Modelo/Model/Registro.php';
-	require_once '../Modelo/Model/FechaRealizacion.php';
-	require_once '../Modelo/Model/Entregable.php';
-	require_once '../Modelo/Model/Precio.php';
-	require_once '../Modelo/Model/Entrega.php';
-	require_once '../Modelo/Model/Pago.php';
+	require_once '../modelo/Model/Planificacion.php';
+	require_once '../modelo/Model/Registro.php';
+	require_once '../modelo/Model/FechaRealizacion.php';
+	require_once '../modelo/Model/Entregable.php';
+	require_once '../modelo/Model/Precio.php';
+	require_once '../modelo/Model/Entrega.php';
+	require_once '../modelo/Model/Pago.php';
 
 	
         session_start();

@@ -1,7 +1,7 @@
 <?php 
 
 
-	include '../Modelo/conexion.php';
+	include '../modelo/conexion.php';
 	session_start();
 	$conect = new conexion(); 
     $UsuarioActivo = $_SESSION['usuario'];

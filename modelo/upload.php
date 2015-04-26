@@ -1,7 +1,7 @@
 <?php
 //$ds          = DIRECTORY_SEPARATOR;  //Para no preocuparnos de la plataforma en la que se implemente
 //require('registro.php');
-//require('guardarDocumento.php');
+//require('guardar-documento.php');
 session_start();
 
 //$conexion = mysql_connect("192.168.2.5","mbittle","5rtZAGYq");
@@ -13,7 +13,7 @@ $conexion = mysql_connect("localhost","root","");
  
  $UsuarioActivo = $_SESSION['usuario'];
 
-$rutaDirectorio = '../../Repositorio/asesor/';   //ruta de nuestro directorio
+$rutaDirectorio = '../../app/Repositorio/asesor/';   //ruta de nuestro directorio
 $asesor = $UsuarioActivo;    
 
     if(!file_exists($rutaDirectorio))
@@ -32,7 +32,7 @@ $asesor = $UsuarioActivo;
        if ($subido) {
                
                 $nombre = $_FILES['file']['name'];
-                $new_ruta="/Repositorio/asesor/".$nombre;
+                $new_ruta="/app/Repositorio/asesor/".$nombre;
                 $tamanio =(integer) $_FILES['file']['size'];
                 date_default_timezone_set('America/La_Paz');
                 $fecha=  date('Y-m-d');

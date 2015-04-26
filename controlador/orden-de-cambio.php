@@ -1,15 +1,15 @@
 <html>
     
     <head>
-        <script src="../Librerias/js/bootstrap-dialog.js"></script>
+        <script src="../lib/js/bootstrap-dialog.js"></script>
     </head>
     
 </html>
 
 <?php
 
-include '../Modelo/conexion_pd.php';
-include '../Modelo/crear_oc_pdf.php';
+include '../modelo/conexion-pd.php';
+include '../modelo/crear-oc-pdf.php';
 session_start();
 
 $conexion = new conexion();
@@ -30,7 +30,7 @@ if (isset($_POST['lista']))
             if (isset($_POST['lugar']))
             {		
                 $existeF = FALSE;
-                $nombreF = '../Repositorio/asesor/OrdenCambio.tex';
+                $nombreF = '../app/Repositorio/asesor/OrdenCambio.tex';
                 if (file_exists($nombreF))
                 {
                     $existeF = TRUE;
@@ -75,7 +75,7 @@ if (isset($_POST['lista']))
                                     
                         if($observ == NULL || $vacio == TRUE)
                         {
-                            echo "<script type=\"text/javascript\">alert('Las observaciones no pueden estar en blanco '); window.location='../Vista/ordenDeCambio.php';</script>";
+                            echo "<script type=\"text/javascript\">alert('Las observaciones no pueden estar en blanco '); window.location='../vista/orden-de-cambio.php';</script>";
                         }
                         else
                         {
@@ -183,7 +183,7 @@ if (isset($_POST['lista']))
 
                                     $remplazo['obs_det_item'] = $obDetItem;
 
-                                    $ruta ="../Repositorio/asesor";
+                                    $ruta ="../app/Repositorio/asesor";
                                     chdir($ruta);
                                     $rutaD="../".$nombreUGE."/OC/";
 
@@ -239,7 +239,7 @@ if (isset($_POST['lista']))
                                    // rename("OrdenCambio.pdf", $file);
                                     rename("OrdenCambio.pdf", $rutaD.$pdf );
 
-                                    $nruta = "../Repositorio/".$nombreUGE."/OC/"."OrdenCambio.pdf";
+                                    $nruta = "../app/Repositorio/".$nombreUGE."/OC/"."OrdenCambio.pdf";
                                     $fecha = date('Y-m-d');
                                     $hora  = date("G:H:i");
                                     $visible = "TRUE";
@@ -272,24 +272,24 @@ if (isset($_POST['lista']))
                                        die("Error");
                                     }
 
-                                    echo"<script type=\"text/javascript\">alert('Se genero correctamente la orden de cambio'); window.location='../Vista/ordenDeCambio.php';</script>";  
+                                    echo"<script type=\"text/javascript\">alert('Se genero correctamente la orden de cambio'); window.location='../vista/orden-de-cambio.php';</script>";  
                                }
 
                             }
                             else
                             {
-                                echo"<script type=\"text/javascript\">alert('La grupo empresa seleccionada aun no ha subido todos los documentos requeridos'); window.location='../Vista/ordenDeCambio.php';</script>"; 
+                                echo"<script type=\"text/javascript\">alert('La grupo empresa seleccionada aun no ha subido todos los documentos requeridos'); window.location='../vista/orden-de-cambio.php';</script>"; 
                             }
 			}
 		    }
                     else
                     {        
-                        echo"<script type=\"text/javascript\">alert('Por favor, seleccione una grupo empresa'); window.location='../Vista/ordenDeCambio.php';</script>";  
+                        echo"<script type=\"text/javascript\">alert('Por favor, seleccione una grupo empresa'); window.location='../vista/orden-de-cambio.php';</script>";  
                     }
                 }
                 else
                 {
-                    echo"<script type=\"text/javascript\">alert('Por favor, suba la plantilla de Orden de Cambio a su repositorio'); window.location='../Vista/ordenDeCambio.php';</script>";                  
+                    echo"<script type=\"text/javascript\">alert('Por favor, suba la plantilla de Orden de Cambio a su repositorio'); window.location='../vista/orden-de-cambio.php';</script>";                  
                 }           
             }		
         }	

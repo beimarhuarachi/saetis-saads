@@ -1,5 +1,5 @@
 <?php
-	require_once '../Modelo/Conexion.php';
+	require_once '../modelo/Conexion.php';
 
 	class Usuario {
 		var $conexion;

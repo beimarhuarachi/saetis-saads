@@ -1,6 +1,6 @@
 <?php
 
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 $conexion = new conexion();
 
 

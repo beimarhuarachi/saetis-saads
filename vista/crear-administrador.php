@@ -2,7 +2,7 @@
 <?php
 
     session_start();
-    include '../Modelo/conexion.php';
+    include '../modelo/conexion.php';
     $conectar = new conexion();
 
 //Crear variables--------------------------
@@ -52,6 +52,6 @@ $peticion3 = $conectar ->consulta("SELECT * FROM asesor");
      }
  else{
      
-   echo"<script type=\"text/javascript\">alert('El nombre de usuario ya fue registrado por favor cambie de nombre'); window.location='registro_administrador.php';</script>";  
+   echo"<script type=\"text/javascript\">alert('El nombre de usuario ya fue registrado por favor cambie de nombre'); window.location='registro-administrador.php';</script>";  
      }
 

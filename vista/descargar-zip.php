@@ -9,16 +9,16 @@
     <title>Sistema de Apoyo a la Empresa TIS</title>
 
     <!-- Core CSS - Include with every page -->
-    <link href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Librerias/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Page-Level Plugin CSS - Dashboard -->
-    <link href="../Librerias/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <link href="../Librerias/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="../lib/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
    
 
     <!-- SB Admin CSS - Include with every page -->
-    <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
+    <link href="../lib/css/sb-admin.css" rel="stylesheet">
     
     
     
@@ -94,10 +94,10 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-files-o "></i> Documentos <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                            <a href="../Vista/subirarchivoasesor.php">Subir Documentos</a>
+                                            <a href="../vista/subir-archivo-asesor.php">Subir Documentos</a>
                                 </li>
                                 <li>
-                                    <a href="../Vista/RegistrarDocumentosRequeridos.php">Registrar Documentos</a>
+                                    <a href="../vista/registrar-documentos-requeridos.php">Registrar Documentos</a>
                                 </li>
                                 
                                 <li>
@@ -105,10 +105,10 @@
                                     <ul class="nav nav-third-level">
                                         
                                         <li>
-                                            <a href="publicar_asesor.php">Nueva Publicaci&oacute;n </a>
+                                            <a href="publicar-asesor.php">Nueva Publicaci&oacute;n </a>
                                         </li>
                                         <li>
-                                            <a href="publicacion_form.php">Publicaciones </a>
+                                            <a href="publicacion-form.php">Publicaciones </a>
                                         </li>
                                        
                                     </ul>
@@ -118,10 +118,10 @@
                                     <a href="#">Recepci&oacute;n Documentos <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="documentos_recibidos.php">Documentos Recibidos</a>
+                                            <a href="documentos-recibidos.php">Documentos Recibidos</a>
                                         </li>
                                         <li>
-                                            <a href="ConfiguracionFechasRecepcion.php" ><span class="fa fa-calendar-o"></span> Configuraci&oacute;n de Fechas para la Recepci&oacute;n de Documentos</a>
+                                            <a href="configuracion-fechas-recepcion.php" ><span class="fa fa-calendar-o"></span> Configuraci&oacute;n de Fechas para la Recepci&oacute;n de Documentos</a>
                                             
                                         </li>
          
@@ -137,10 +137,10 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> Tareas<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="orden_cambio.php">Emitir Orden de Cambio</a>
+                                    <a href="orden-de-cambio.php">Emitir Orden de Cambio</a>
                                 </li>
                                 <li>
-                                    <a href="notificacion_conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
+                                    <a href="notificacion-conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
                                 </li>
                                 <li>
                                     <a href="#">Seguimiento Grupo Empresa <span class="fa arrow"></span></a>
@@ -154,25 +154,25 @@
                                         <a href="#">Evaluacion Grupo Empresa<span class="fa arrow"></span></a>
                                             <ul class="nav nav-third-level">
                                                 <li>
-                                                    <a href="CrearModalidadEvaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
+                                                    <a href="crear-modalidad-evaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
                                                 </li>
                                                 <li>
-                                                    <a href="CrearModalidadCalificacion.php"> Criterio de Calificaci&oacute;n</a>
+                                                    <a href="crear-modalidad-calificacion.php"> Criterio de Calificaci&oacute;n</a>
                                                 </li>
                                                  <li>
-                                                    <a href="EliminarCriterioCalificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
+                                                    <a href="eliminar-criterio-calificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
                                                 </li>
                                                 <li>
-                                                    <a href="CrearFormulario.php">Crear Formulario de Evaluacion</a>
+                                                    <a href="crear-formulario.php">Crear Formulario de Evaluacion</a>
                                                 </li>
                                                 <li>
-                                                    <a href="EliminarFormulario.php">Eliminar Formulario de Evaluacion</a>
+                                                    <a href="eliminar-formulario.php">Eliminar Formulario de Evaluacion</a>
                                                 </li>
                                                 <li>
-                                                    <a href="SeleccionarFormulario.php"> Seleccionar Formulario de Evaluacion </a>   
+                                                    <a href="seleccionar-formulario.php"> Seleccionar Formulario de Evaluacion </a>   
                                                 </li>
                                                 <li>
-                                                    <a href="EvaluarGrupoEmpresa.php">Evaluar Grupo Empresa </a>   
+                                                    <a href="evaluar-grupo-empresa.php">Evaluar Grupo Empresa </a>   
                                                 </li>
                                             </ul>
                                 </li>
@@ -210,7 +210,7 @@
                         
                             <div class="form-group">
                                 <?php
-                                   include './copiar_contenido_carpeta.php';
+                                   include './copiar-contenido-carpeta.php';
                                    
 
                                 //primero creamos la función que hace la magia
@@ -254,11 +254,11 @@
                                       //directorio a comprimir
                                       //la barra inclinada al final es importante
                                       //la ruta debe ser relativa no absoluta      
-                                      $dir = '../Repositorio/temporal/';
+                                      $dir = '../app/Repositorio/temporal/';
 
                                       //ruta donde guardar los archivos zip, ya debe existir
                                       
-                                      $rutaFinal="../Repositorio/";
+                                      $rutaFinal="../app/Repositorio/";
 
                                       $archivoZip = "Zip_dir_documentos.zip";  
 
@@ -280,7 +280,7 @@
                                           echo "Error, archivo zip no ha sido creado!!";
                                         }                    
                                       }
-                                      eliminarDir("../Repositorio/temporal")
+                                      eliminarDir("../app/Repositorio/temporal")
                                 ?>
                             </div>
                         
@@ -295,19 +295,19 @@
     <!-- /#wrapper -->
 
     <!-- Core Scripts - Include with every page -->
-    <script src="../Librerias/js/jquery-1.10.2.js"></script>
-    <script src="../Librerias/js/bootstrap.min.js"></script>
-    <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
     <!-- Page-Level Plugin Scripts - Dashboard -->
-    <script src="../Librerias/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="../Librerias/js/plugins/morris/morris.js"></script>
+    <script src="../lib/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="../lib/js/plugins/morris/morris.js"></script>
 
     <!-- SB Admin Scripts - Include with every page -->
-    <script src="../Librerias/js/sb-admin.js"></script>
+    <script src="../lib/js/sb-admin.js"></script>
 
     <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
-    <script src="../Librerias/js/demo/dashboard-demo.js"></script>
+    <script src="../lib/js/demo/dashboard-demo.js"></script>
 
 </body>
 

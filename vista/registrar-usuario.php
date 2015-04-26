@@ -7,27 +7,27 @@
 
     <title>Sistema de Apoyo a la Empresa TIS</title>
    
-    <link rel="stylesheet" type="text/css" href="../Librerias/lib/css/docs.css">
+    <link rel="stylesheet" type="text/css" href="../lib/lib/css/docs.css">
 
     <!-- Core CSS - Include with every page -->
-    <link href="../Librerias/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Librerias/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="../Librerias/css/bootstrap-dialog.css" rel="stylesheet">
+    <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/css/bootstrap-dialog.css" rel="stylesheet">
 
 
     <!-- SB Admin CSS - Include with every page -->
-    <link href="../Librerias/css/sb-admin.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../Librerias/css/jquery-te-1.4.0.css">
+    <link href="../lib/css/sb-admin.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../lib/css/jquery-te-1.4.0.css">
     
-    <script src="../Librerias/js/jquery-1.10.2.js"></script>
+    <script src="../lib/js/jquery-1.10.2.js"></script>
    
-    <script src="../Librerias/js/jquery-2.1.0.min.js"></script>
-    <!--script src="../Librerias/js/jquery-ui.js"></script-->
-    <script src="../Librerias/js/bootstrap-dialog.js"></script>
+    <script src="../lib/js/jquery-2.1.0.min.js"></script>
+    <!--script src="../lib/js/jquery-ui.js"></script-->
+    <script src="../lib/js/bootstrap-dialog.js"></script>
     
      <link href="css/style.css" rel="stylesheet" type="text/css" />
     
-    <script type="text/javascript" src="../Librerias/js/validar_registro.js"></script>
+    <script type="text/javascript" src="../lib/js/validar_registro.js"></script>
      
 </head>
 
@@ -57,7 +57,7 @@
 
 <!-------------------------------------------NUEVAS PUBLICACIONES------------------------------------------>
 <div id="page-wrapper">
-    <form method = "post" id="FormularioRegistroUsuario" action="ProcesarRegistroUsuario.php" role="form" enctype="multipart/data-form" onsubmit="return validar(FormularioRegistroUsuario)">
+    <form method = "post" id="FormularioRegistroUsuario" action="procesar-registro-usuario.php" role="form" enctype="multipart/data-form" onsubmit="return validar(FormularioRegistroUsuario)">
                                   
         <div class ="form-horizontal">
             <div class="row">
@@ -147,7 +147,7 @@
                                                    
                                                 <?php
                                                     $i=0;
-                                                    include '../Modelo/conexion.php';
+                                                    include '../modelo/conexion.php';
         
                                                     $conect = new conexion();
                                                     $ResRoles = $conect->consulta("SELECT * FROM `rol` WHERE ROL_R != 'administrador' and  ROL_R != 'grupoEmpresa' ");
@@ -177,15 +177,15 @@
     </div>
     </div> 
     
-    <script src="../Librerias/js/bootstrap.min.js"></script>
-    <script src="../Librerias/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../lib/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
 
     <!-- SB Admin Scripts - Include with every page -->
-    <script src="../Librerias/js/sb-admin.js"></script>
+    <script src="../lib/js/sb-admin.js"></script>
   
     <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
-    <script src="../Librerias/js/demo/dashboard-demo.js"></script>
+    <script src="../lib/js/demo/dashboard-demo.js"></script>
     <!-- Combo Box scripts -->
 
     

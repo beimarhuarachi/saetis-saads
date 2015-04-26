@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 error_reporting(E_ERROR);
-include '../Modelo/conexion.php';
+include '../modelo/conexion.php';
 
 
 
@@ -21,13 +21,13 @@ include '../Modelo/conexion.php';
     
             $idUsuarioG=$_POST['nombreUsuarioG'];
             $nombreRegistro=  str_replace("/", " ", $_POST['nombreRegistro']);
-            $rutaDirectorio="../Repositorio/$idUsuarioG";
+            $rutaDirectorio="../app/Repositorio/$idUsuarioG";
             if(!file_exists($rutaDirectorio))
             {
                 mkdir($rutaDirectorio, 0777);
             }
             $ruta = "$rutaDirectorio/" . $_FILES['archivoA']['name'];
-            $rutaDocumento="/Repositorio/$idUsuarioG/" . $_FILES['archivoA']['name'];
+            $rutaDocumento="/app/Repositorio/$idUsuarioG/" . $_FILES['archivoA']['name'];
             //ahora movemos el archivo
             try{
             $resultado = move_uploaded_file($_FILES['archivoA']['tmp_name'], $ruta);

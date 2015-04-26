@@ -45,7 +45,7 @@ $(document).on('ready',function(){
         $('#horaFinalE').val(txtHorFin);
         **/
         $.ajax({
-              url:"recargarFechas.php",
+              url:"recargar-fechas.php",
               type: "POST",
               data:"sel=" + $("#documentoRequerido").val(),
               success: function(datos){
