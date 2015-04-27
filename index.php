@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php 
  
-    include 'modelo/conexion.php';
+    include 'app/modelo/conexion.php';
     $conectar = new conexion();
 ?>
 <html>
@@ -30,8 +30,8 @@
         	<link href="lib/css/style11.css" rel="stylesheet" type="text/css" />
 		<link href="lib/css/tabla-div.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="lib/css/coin-slider.css" />
-                <link href="app/archivos/estilos.css" rel="stylesheet" type="text/css">
-                <script language="JavaScript" src="app/archivos/script.js" type="text/javascript"></script>
+                <link href="css/estilos.css" rel="stylesheet" type="text/css">
+                <script language="JavaScript" src="js/script.js" type="text/javascript"></script>
 
 </head>
 
@@ -157,13 +157,13 @@
 
         <div class="form-group">
         <div align="center">
-        <button type="submit" name="ingresar"  class="btn btn-primary"  onclick=" location.href='vista/registrar-grupo-empresa.php' " id="btn-registrarUser"> <span class="glyphicon glyphicon-ok" ></span> REGISTRATE</button>
+        <button type="submit" name="ingresar"  class="btn btn-primary"  onclick=" location.href='app/vista/registrar-grupo-empresa.php' " id="btn-registrarUser"> <span class="glyphicon glyphicon-ok" ></span> REGISTRATE</button>
         </div></div>
         </div>     
         </div>
 
 
-        <form method="post" action="vista/login.php">
+        <form method="post" action="app/vista/login.php">
         <div class="sidebar">
 
 
@@ -195,7 +195,7 @@
         </div>                                                  
 
         <div class="form-group">
-        <a href="vista/registrar-usuario.php"><font color='green' size="1.5%">no eres usuario todavia? REGISTRATE</font></a>
+        <a href="app/vista/registrar-usuario.php"><font color='green' size="1.5%">no eres usuario todavia? REGISTRATE</font></a>
         <div align="right"> <hr>
         <button type="submit" name="ingresar" class="btn btn-primary" id="btn-registrarUser"> <span class="glyphicon glyphicon-ok"></span> Ingresar</button>
         </div></div>
@@ -265,7 +265,7 @@
         <div class="contenedor-tabla">
         <div class="contenedor-fila">
 
-        <div class="contenedor-columna3"><li><a href="vista/verificar-nombre.php">Verificar Nombre Grupo Empresa</a><br/> 
+        <div class="contenedor-columna3"><li><a href="app/vista/verificar-nombre.php">Verificar Nombre Grupo Empresa</a><br/> 
         Verificar Nombre de Grupo Empresa Disponible</li></div>
         </div>
         </div>

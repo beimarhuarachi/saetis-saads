@@ -71,13 +71,13 @@ if(isset($Agregar))
                     
                     echo "<SCRIPT LANGUAGE='javascript'>". 
                         " alert('Se ha registrado satisfactoriamente el criterio_evaluacion_$idCrit . ');".
-                        " document.location=('../../CrearModalidadEvaluacion.php');</SCRIPT>";
+                        " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                 }
                 else 
                 {
                     echo "<SCRIPT LANGUAGE='javascript'>". 
                         " alert('EL criterio que ingreso ya se encuentra registrado. ');".
-                        " document.location=('../../CrearModalidadEvaluacion.php');</SCRIPT>";
+                        " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                 }
 }
 ?>
