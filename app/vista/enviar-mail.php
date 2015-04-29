@@ -105,7 +105,7 @@
                                     <a href="#">Grupo Empresa <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="lista-grupoEmpresa.php"> Integrantes </a>
+                                            <a href="lista-grupo-empresa.php"> Integrantes </a>
                                             
                                         </li>
                                         <li>

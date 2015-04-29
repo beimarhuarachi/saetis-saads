@@ -271,7 +271,7 @@
             <div class="col-lg-12">
                 <fieldset>
                     <legend> Desplazar o Buscar Documento </legend>
-                    <form action="../modelo/upload.php" class="dropzone" data-toggle="tooltip" data-placement="right" title="Arrastre documentos a esta &aacute;rea">
+                    <form action="../modelo/cargar-archivo.php" class="dropzone" data-toggle="tooltip" data-placement="right" title="Arrastre documentos a esta &aacute;rea">
                         
                     </form>
                     <div class="col-sm-8">  

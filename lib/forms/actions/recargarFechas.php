@@ -4,7 +4,7 @@
     $hor1="No registrado";
     $fec2="No registrado";
     $hor2="No registrado";
-include '../../../modelo/conexion.php';
+include '../../../app/modelo/conexion.php';
 
 $co=new conexion();
 if(isset($selecDoc))

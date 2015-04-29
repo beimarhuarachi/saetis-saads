@@ -1,12 +1,12 @@
 <?php
 	date_default_timezone_set("America/La_Paz");
-	require_once '../modelo/nucleo/Planificacion.php';
-	require_once '../modelo/nucleo/Registro.php';
-	require_once '../modelo/nucleo/FechaRealizacion.php';
-	require_once '../modelo/nucleo/Entregable.php';
-	require_once '../modelo/nucleo/Precio.php';
-	require_once '../modelo/nucleo/Entrega.php';
-	require_once '../modelo/nucleo/Pago.php';
+	require_once '../modelo/nucleo/planificacion-actividad.php';
+	require_once '../modelo/nucleo/registro-sistema.php';
+	require_once '../modelo/nucleo/fecha-realizacion.php';
+	require_once '../modelo/nucleo/producto-entregable.php';
+	require_once '../modelo/nucleo/precio-actividad.php';
+	require_once '../modelo/nucleo/entrega-grupo-empresa.php';
+	require_once '../modelo/nucleo/pago-planificacion.php';
 
 	
         session_start();
@@ -35,7 +35,7 @@
 			echo ('<div class="alert alert-success">
 					   <strong>Planificacion registrada...</strong>
 				   </div>
-				   <script>$("#page-wrapper").load("vistaRegistrarPlanificacion.php");</script>');
+				   <script>$("#page-wrapper").load("vista-registrar-planificacion.php");</script>');
             break;
         case 'registrar entregables':
 			$entregables = explode(',', $_POST['entregables']);
@@ -49,7 +49,7 @@
 			echo ('<div class="alert alert-success">
 				       <strong>Entregables registrados...</strong>
 				   </div>
-				   <script>$("#page-wrapper").load("vistaRegistrarPlanificacion.php");</script>');
+				   <script>$("#page-wrapper").load("vista-registrar-planificacion.php");</script>');
             break;
         case 'registrar costo total proyecto':
         	$costo = $_POST['costo'];
@@ -64,7 +64,7 @@
            echo ('<div class="alert alert-success">
 				       <strong>Costo total proyecto registrado...</strong>
 				   </div>
-				   <script>$("#page-wrapper").load("vistaRegistrarPlanificacion.php");</script>');
+				   <script>$("#page-wrapper").load("vista-registrar-planificacion.php");</script>');
             break;
         case 'registrar plan pagos':
 			$actividades = explode(',', $_POST['actividades']);

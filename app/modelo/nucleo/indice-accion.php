@@ -1,5 +1,5 @@
 <?php
-    require_once '../modelo/Accion.php';
+    require_once '../modelo/accion-grupo.php';
 
     class Indice extends Accion {
         public function ejecutar($datos) {

@@ -1,5 +1,5 @@
 <?php
-	require_once '../modelo/BarraNavegacion.php';
+	require_once '../modelo/barra-navegacion.php';
 	
 	abstract class Accion
 	{

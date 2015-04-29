@@ -1,10 +1,10 @@
 <?php
-    require_once '../modelo/nucleo/Planificacion.php';
-    require_once '../modelo/nucleo/Entregable.php';
-    require_once '../modelo/nucleo/Registro.php';
-    require_once '../modelo/nucleo/Precio.php';
-    require_once '../modelo/nucleo/FechaRealizacion.php';
-    require_once '../modelo/nucleo/Reporte.php';
+    require_once '../modelo/nucleo/planificacion-actividad.php';
+    require_once '../modelo/nucleo/producto-entregable.php';
+    require_once '../modelo/nucleo/registro-sistema.php';
+    require_once '../modelo/nucleo/precio-actividad.php';
+    require_once '../modelo/nucleo/fecha-realizacion.php';
+    require_once '../modelo/nucleo/reporte-actividad.php';
 
     $funcion = $_POST['funcion'];
     $u = $_POST['usuario'];

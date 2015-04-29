@@ -1,6 +1,6 @@
 <?php
-	require_once '../modelo/nucleo/Asistencia.php';
-	require_once '../modelo/nucleo/Reporte.php';
+	require_once '../modelo/nucleo/asistencia-grupo.php';
+	require_once '../modelo/nucleo/reporte-actividad.php';
 
 	$funcion = $_POST['funcion'];
 	$registro = $_POST['registro'];

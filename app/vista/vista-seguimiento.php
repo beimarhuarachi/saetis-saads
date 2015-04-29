@@ -3,7 +3,7 @@
 <?php
 
         require_once '../modelo/conexion.php';
-        require_once '../modelo/nucleo/GrupoEmpresa.php';   
+        require_once '../modelo/nucleo/grupo-empresa.php';   
         session_start();
         $usuario = $_SESSION['usuario'];
      
