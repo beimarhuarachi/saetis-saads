@@ -48,7 +48,7 @@ $uActivo = $_SESSION['usuario'];
         <link href="../../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
         <!-- SB Admin CSS - Include with every page -->
         <link href="../../lib/css/sb-admin.css" rel="stylesheet">
-        <link href="estilos-vista/style.css" rel="stylesheet" type="text/css" />
+        <link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div id="wrapper">

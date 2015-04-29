@@ -58,7 +58,7 @@
     <link href="../../lib/css/sb-admin.css" rel="stylesheet">
     <link href="../../lib/css/dropzone.css" type="text/css" rel="stylesheet" />
     <script src="../../lib/js/dropzone.min.js"></script>
-    <link href="estilos-vista/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" />
 
 </head>
 

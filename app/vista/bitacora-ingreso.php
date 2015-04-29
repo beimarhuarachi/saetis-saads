@@ -30,8 +30,8 @@
 
     <!-- SB Admin CSS - Include with every page -->
     <link href="../../lib/css/sb-admin.css" rel="stylesheet">
-    <link href="estilos-vista/style.css" rel="stylesheet" type="text/css" />
-    <link href="estilos-vista/tabla-div.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/tabla-div.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../../lib/lib/funcion.js"></script>
     <script>
         jQuery(document).ready(function() {

@@ -67,8 +67,8 @@
     <link href="../../lib/css/sb-admin.css" rel="stylesheet">
     
     <title>Bienvenidos a SAETIS</title>
-	<link href="estilos-vista/style.css" rel="stylesheet" type="text/css" />
-    <link href="estilos-vista/tabla-div.css" rel="stylesheet" type="text/css" />
+	<link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/tabla-div.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>

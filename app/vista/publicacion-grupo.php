@@ -68,11 +68,11 @@
     <link href="../../lib/css/plugins/timeline/timeline.css" rel="stylesheet">
     <!-- SB Admin CSS - Include with every page -->
     <link href="../../lib/css/sb-admin.css" rel="stylesheet">
-    <link href="estilos-vista/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-   <link href="estilos-vista/estiloTabla.css" rel="stylesheet" type="text/css" />
+   <link href="../../css/estilos-vista/estiloTabla.css" rel="stylesheet" type="text/css" />
    
 <div id="wrapper">
        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">

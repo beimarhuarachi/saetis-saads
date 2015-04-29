@@ -163,7 +163,7 @@
                         <a href="#"><i class="glyphicon glyphicon-th-list"></i> Evaluacion<span class="fa arrow"></span></a>
                         <ul class="nav nav-third-level">
                             <li>
-                                <a href="lista-valuacion.php">Evaluacion 2 Fase </a>                             
+                                <a href="lista-evaluacion.php">Evaluacion 2 Fase </a>                             
                             </li>
                             <li>
                                 <a href="#">Evaluacion 3 Fase <span class="fa arrow"></span></a>

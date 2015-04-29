@@ -85,9 +85,9 @@
     
     
     
-    <link href="estilos-vista/tabla-div1.css" rel="stylesheet" type="text/css" />
-    <link href="estilos-vista/tabla-div.css" rel="stylesheet" type="text/css" />
-    <link href="estilos-vista/style.css" rel="stylesheet" type="text/css" /> 
+    <link href="../../css/estilos-vista/tabla-div1.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/tabla-div.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" /> 
 </head>
 
 <body>

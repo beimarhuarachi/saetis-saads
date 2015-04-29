@@ -25,7 +25,7 @@
     <!--script src="../../lib/js/jquery-ui.js"></script-->
     <script src="../../lib/js/bootstrap-dialog.js"></script>
     
-     <link href="estilos-vista/style.css" rel="stylesheet" type="text/css" />
+     <link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" />
     
     <script type="text/javascript" src="../../lib/js/validar_registro.js"></script>
      

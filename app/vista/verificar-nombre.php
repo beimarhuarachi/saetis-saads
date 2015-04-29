@@ -23,7 +23,7 @@
     <!-- SB Admin CSS - Include with every page -->
     <link href="../../lib/css/sb-admin.css" rel="stylesheet">
     <script src="../../lib/js/validar_nombre.js" type="text/javascript"></script>
-    <link href="estilos-vista/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/estilos-vista/style.css" rel="stylesheet" type="text/css" />
     
 </head>
 
