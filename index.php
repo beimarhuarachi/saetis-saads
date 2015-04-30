@@ -47,6 +47,7 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                                <h2 ><IMG SRC="img/umss.png"><font color='white'> <strong>UNIVERSIDAD MAYOR DE SAN SIMON &nbsp;&nbsp;&nbsp;</strong></h2>
+							   <a href="app/vista/ayuda.php" >AYUDA</a>
             </div>
             <!-- /.navbar-header -->
 
