@@ -132,7 +132,7 @@ $pdf->MultiCell(130, 5, utf8_decode('Paralelamente se solicita, indicar el dia d
 $pdf->Cell(30);
 $pdf->MultiCell(130,5,  utf8_decode('Asímismo, recordar que para el día de la firma del contrato se requiere de una copia física de la Boleta de Garantía, emitida a favor de TIS por parte de '."$nombreEmpresa."));
 
-$rutaDirectorio="../app/documentos-cargados/$idGrupoEmpresa/NC";
+$rutaDirectorio="../documentos-cargados/$idGrupoEmpresa/NC";
 if (!file_exists($rutaDirectorio)) {
     mkdir($rutaDirectorio, 0777,TRUE);
 }
@@ -148,7 +148,7 @@ try {
     
     $visualizable=TRUE;
     $descargable=TRUE;
-    $rutaDocumento="/app/documentos-cargados/".$idGrupoEmpresa."/NC/".$idGrupoEmpresa."_NC.pdf";
+    $rutaDocumento="/documentos-cargados/".$idGrupoEmpresa."/NC/".$idGrupoEmpresa."_NC.pdf";
     $con->consulta("INSERT INTO `registro` (NOMBRE_U,TIPO_T,ESTADO_E,NOMBRE_R,FECHA_R,HORA_R)  VALUES ('$idGrupoEmpresa','notificacion de conformidad','habilitado','".$idGrupoEmpresa."_NC.pdf','".date("Y-m-d")."','".  date("G:H:i")."')");
     $con->consulta("INSERT INTO `documento` (ID_R,TAMANIO_D,RUTA_D,VISUALIZABLE_D,DESCARGABLE_D) VALUES ($idRegistro,4444,'$rutaDocumento','$visualizable','$descargable')");
 } catch (Exception $exc) {

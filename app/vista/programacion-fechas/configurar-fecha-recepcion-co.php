@@ -1,6 +1,6 @@
 <?php
 error_reporting (5); 	
-include '../../../modelo/conexion.php';
+include '../../modelo/conexion.php';
 
 $co=new conexion();
 $usuarioAse = $_POST['usuarioAsesor'];

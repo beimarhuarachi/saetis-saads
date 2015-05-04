@@ -168,7 +168,7 @@ class ORDENPDF extends FPDF
 		$this->Ln(2);
 		$this->Cell(30);
 		$this->MultiCell(130,5,  utf8_decode('Así mismo, recordar que para el día de la firma del contrato que se realizará el día '."$this->fecha".', a horas '."$this->hora".' en el '."$this->lugar".'; se requiere de una copia física de la Boleta de Garantía, emitida a favor de TIS por parte de '."$this->nombreLargo".'.'),0,'J');
-		$rutaDirectorio="../app/documentos-cargados/".$this->nombreLargo."/OC/";
+		$rutaDirectorio="../documentos-cargados/".$this->nombreLargo."/OC/";
 		$file = $this->titulo.'_'.$this->nombreLargo.'.pdf';
 		
 		if (!file_exists($rutaDirectorio)) {
@@ -177,7 +177,7 @@ class ORDENPDF extends FPDF
 
 		if(!$this->visualizable) {
 			
-			$rutaDocumento="/app/documentos-cargados/".$this->nombreLargo."/OC/".$file.".pdf";
+			$rutaDocumento="/documentos-cargados/".$this->nombreLargo."/OC/".$file.".pdf";
     
 			$this->registro= new Registro($this->nombreEmpresa,'orden de cambio','habilitado',$file,$this->fecha,$this->hora);
 			$this->idRegistro = $this->registro->getIdRegistro();
@@ -188,7 +188,7 @@ class ORDENPDF extends FPDF
 		}
 		else {
 
-			$rutaDocumento="../app/documentos-cargados/".$this->nombreLargo."/OC/".$file.".pdf";
+			$rutaDocumento="../documentos-cargados/".$this->nombreLargo."/OC/".$file.".pdf";
 			if(!file_exists($rutaDocumento)){
 			$this->Output($rutaDocumento,'I');
 			echo '<embed width="100%" height="100%" name="plugin" src="'.$rutaDocumento.'" type="application/pdf">';

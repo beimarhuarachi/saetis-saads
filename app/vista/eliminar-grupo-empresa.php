@@ -69,7 +69,7 @@ if(isset($_GET['op']))
 		$Del_Rol = $conect->consulta("DELETE FROM usuario_rol WHERE NOMBRE_U = '$GrupoE' ");
 		$Del_Us = $conect->consulta("DELETE FROM usuario WHERE NOMBRE_U = '$GrupoE' ");
 
-		eliminDir("../app/documentos-cargados/".$GrupoE."");
+		eliminDir("../documentos-cargados/".$GrupoE."");
 
 		echo '<script>alert("Se elimino la grupo empresa correctamente!!")</script>';
 		echo '<script>window.location="../vista/lista-grupo-empresas.php";</script>';

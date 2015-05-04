@@ -1,5 +1,5 @@
 <?php
-include '../../../modelo/conexion.php';
+include '../../modelo/conexion.php';
 //header('Location: ../../crear-modalidad-evaluacion.php');
 $textDescripcionD=$_POST["descripcionDocumento"];
 

@@ -25,7 +25,7 @@ $idgp = $_GET['id_us'];
     	$fila = mysql_fetch_array($peticion_registro);
     	 $id=$fila[0];
     	 $id1=$fila[1];
-    	 $ruta="../app/documentos-cargados/asesor/"."$idgp";
+    	 $ruta="../documentos-cargados/asesor/"."$idgp";
 
 	unlink($ruta);
             $doc_eliminar=$conect->consulta(" DELETE FROM `documento` WHERE ID_R='$id'");

@@ -295,7 +295,7 @@
                   
                      
                    <?php 
-                         $direcRep = "../app/documentos-cargados/asesor"; 
+                         $direcRep = "../documentos-cargados/asesor"; 
                          $abriRep=opendir($dir); 
                          echo "<br><br>"; 
                          while ($archivo = readdir($directorio))

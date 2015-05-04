@@ -21,13 +21,13 @@ include '../modelo/conexion.php';
     
             $idUsuarioG=$_POST['nombreUsuarioG'];
             $nombreRegistro=  str_replace("/", " ", $_POST['nombreRegistro']);
-            $rutaDirectorio="../app/documentos-cargados/$idUsuarioG";
+            $rutaDirectorio="../documentos-cargados/$idUsuarioG";
             if(!file_exists($rutaDirectorio))
             {
                 mkdir($rutaDirectorio, 0777);
             }
             $ruta = "$rutaDirectorio/" . $_FILES['archivoA']['name'];
-            $rutaDocumento="/app/documentos-cargados/$idUsuarioG/" . $_FILES['archivoA']['name'];
+            $rutaDocumento="/documentos-cargados/$idUsuarioG/" . $_FILES['archivoA']['name'];
             //ahora movemos el archivo
             try{
             $resultado = move_uploaded_file($_FILES['archivoA']['tmp_name'], $ruta);

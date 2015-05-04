@@ -4,22 +4,22 @@ include '../modelo/conexion.php';
 $UsuarioActivo = $_POST['Usuario'];
 $DocumentoR = $_POST['Documento'];
 
-$rutaDirectorio="../app/documentos-cargados/$UsuarioActivo";  
+$rutaDirectorio="../documentos-cargados/$UsuarioActivo";  
 $clas = new conexion();
 
     if(!file_exists($rutaDirectorio))
     {
         mkdir($rutaDirectorio, 0777);
 
-        if(!file_exists("../app/documentos-cargados/".$UsuarioActivo."/index.html"))
+        if(!file_exists("../documentos-cargados/".$UsuarioActivo."/index.html"))
         {
-            $directorioIndex = "../app/documentos-cargados/".$UsuarioActivo."/index.html";
+            $directorioIndex = "../documentos-cargados/".$UsuarioActivo."/index.html";
             fopen($directorioIndex, "x");
         }
     }
     
     $ruta = "$rutaDirectorio/" . $_FILES['archivoA']['name'];
-            $rutaDocumento="/app/documentos-cargados/$UsuarioActivo/" . $_FILES['archivoA']['name'];
+            $rutaDocumento="/documentos-cargados/$UsuarioActivo/" . $_FILES['archivoA']['name'];
         
             try{
             $resultado = move_uploaded_file($_FILES['archivoA']['tmp_name'], $ruta);

@@ -13,7 +13,7 @@ $conexion = mysql_connect("localhost","root","");
  
  $UsuarioActivo = $_SESSION['usuario'];
 
-$rutaDirectorio = '../../app/documentos-cargados/asesor/';   //ruta de nuestro directorio
+$rutaDirectorio = '../../documentos-cargados/asesor/';   //ruta de nuestro directorio
 $asesor = $UsuarioActivo;    
 
     if(!file_exists($rutaDirectorio))
@@ -26,13 +26,13 @@ $asesor = $UsuarioActivo;
     
     $targetPath = dirname( __FILE__ ) . $rutaDirectorio ;  //absolute path of the destination folder.
     $targetFile =  $targetPath. $_FILES['file']['name'];  //absolute path of the uploaded file destination.
-    
+    echo "hola beimar";
     $subido = move_uploaded_file($tempFile,$targetFile); //6
     
        if ($subido) {
                
                 $nombre = $_FILES['file']['name'];
-                $new_ruta="/app/documentos-cargados/asesor/".$nombre;
+                $new_ruta="/documentos-cargados/asesor/".$nombre;
                 $tamanio =(integer) $_FILES['file']['size'];
                 date_default_timezone_set('America/La_Paz');
                 $fecha=  date('Y-m-d');
@@ -61,5 +61,5 @@ $asesor = $UsuarioActivo;
         }
     }
 
-?>    
+?>     
  

@@ -5,7 +5,7 @@ include('config/config.php');
 
 if(isset($_POST['submit'])){
 
-include('cargar-archivo.php');
+include('upload.php');
 
 }else{
 
@@ -227,7 +227,7 @@ $get_params = http_build_query(array(
 		    dictResponseError: "SERVER ERROR",
 		    paramName: "file", // The name that will be used to transfer the file
 		    maxFilesize: <?php echo $MaxSizeUpload; ?>, // MB
-		    url: "cargar-archivo.php",
+		    url: "upload.php",
 		    accept: function(file, done) {
 			    var extension=file.name.split('.').pop();
 			    extension=extension.toLowerCase();

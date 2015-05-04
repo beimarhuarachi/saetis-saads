@@ -254,11 +254,11 @@
                                       //directorio a comprimir
                                       //la barra inclinada al final es importante
                                       //la ruta debe ser relativa no absoluta      
-                                      $dir = '../app/documentos-cargados/temporal/';
+                                      $dir = '../documentos-cargados/temporal/';
 
                                       //ruta donde guardar los archivos zip, ya debe existir
                                       
-                                      $rutaFinal="../app/documentos-cargados/";
+                                      $rutaFinal="../documentos-cargados/";
 
                                       $archivoZip = "Zip_dir_documentos.zip";  
 
@@ -280,7 +280,7 @@
                                           echo "Error, archivo zip no ha sido creado!!";
                                         }                    
                                       }
-                                      eliminarDir("../app/documentos-cargados/temporal")
+                                      eliminarDir("../documentos-cargados/temporal")
                                 ?>
                             </div>
                         
