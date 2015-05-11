@@ -1,8 +1,15 @@
 <?php
-
+	/**
+	* Incluicion de la clase encriptadora
+	*/
+	require_once '../modelo/nucleo/encriptador.php';
+	
+	//Instanciamos el encriptador
+	$encriptador = new Encriptador();
+	
     $Name = $_POST['nombreUsuario'];
     $RealName = $_POST['nombreReal'];
-    $Pass = $_POST['password'];
+    $Pass = $encriptador->encriptar($_POST['password']);
     $Email = $_POST['email'];
     $rol = $_POST['UsuarioRol'];
     $Apellido = $_POST['apellido'];

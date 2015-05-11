@@ -1,10 +1,18 @@
 <?php
 session_start();
+
     include '../modelo/conexion.php';
+	/**
+	* Incluicion de la clase encriptadora
+	*/
+	require_once '../modelo/nucleo/encriptador.php';
+	
+	//Instanciamos el encriptador
+	$encriptador = new Encriptador();
     $conectar = new conexion();
     $name = $_POST['nombreUsuario'];
     $RealName = $_POST['nombreReal'];
-    $password = $_POST['password'];
+    $password = $encriptador->encriptar($_POST['password']);
     $emailUsuario = $_POST['email'];
     $apellidoUsuario = $_POST['apellido'];
     $telefonoUsuario = $_POST['telefono'];

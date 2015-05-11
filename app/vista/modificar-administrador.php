@@ -252,7 +252,7 @@
             <span class='input-group-addon'>
             <span class='glyphicon glyphicon-lock'></span>
             </span>
-            <input class='form-control' type='text' name='password' id='UserPassword'    minlength='5' pattern='^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$' title='la contraseña debe contener mayusculas, minusculas, caracteres y numeros' value='".$fila['PASSWORD_U']."' required/>
+            <input class='form-control' type='text' name='password' id='UserPassword'    minlength='5' pattern='^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$' title='la contraseña debe contener mayusculas, minusculas, caracteres y numeros' value='Nuevo*123' required/>
             </div>
             </div>  
 
