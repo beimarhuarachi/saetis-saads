@@ -122,37 +122,7 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#"><i class="fa fa-tasks fa-fw"></i> Tareas<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="inscripcion-proyecto.php">Registrar Proyecto</a>
-                            </li>
-                            <li>
-                                <a href="../vista/subir-archivo-asesor.php">Subir Documentos</a>
-                            </li>
-                            <li>
-                                <a href="../vista/registrar-documentos-requeridos.php">Registrar Documentos Requeridos</a>
-                            </li>
-                            
-                            <li>
-                                <a href="configuracion-fechas-recepcion.php" >Configurar Fechas para la Recepci&oacute;n de Documentos</a>
-                            </li>
-                            <li>
-                                <a href="../vista/publicar-asesor.php">Crear Publicaci&oacute;n </a>
-                            </li>
-                            <li>
-                                <a href="orden-de-cambio.php">Emitir Orden de Cambio</a>
-                            </li>
-                            <li>
-                                <a href="notificacion-conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
-                            </li>
-                            <li>
-                                <a href="contrato.php">Emitir Contrato </a>
-                            </li>
-                            
-                        </ul>
-                    </li>
+                    
                     <li>
 
                         <a id="SeguimientoSemanal" href="#"><i class="glyphicon glyphicon-list-alt"></i> Seguimiento Semanal</a>
@@ -263,17 +233,44 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header"  >Bienvenido a SAETIS!</h1>
+            <h1 class="page-header" style="float:left;" >Bienvenido a SAETIS!</h1>
+            
+                <img  src="../../lib/images/SAETIS.png" alt="portadaInicio" style="float:right" 
+                class=" img-thumbnail" width="150px">
+            
         </div>
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-8">
+    <div class="row" style="background:#074202;">
+        <div class="col-lg-8" >
 
-            <div class="col-lg-12">
-                <img  src="../../lib/images/SAETIS.png" alt="portadaInicio" class=" img-thumbnail">
-            </div>  
+            
+            <li>
+                <a href="inscripcion-proyecto.php">Registrar Proyecto</a>
+            </li>
+            <li>
+                <a href="../vista/subir-archivo-asesor.php">Subir Documentos</a>
+            </li>
+            <li>
+                <a href="../vista/registrar-documentos-requeridos.php">Registrar Documentos Requeridos</a>
+            </li>
+            
+            <li>
+                <a href="configuracion-fechas-recepcion.php" >Configurar Fechas para la Recepci&oacute;n de Documentos</a>
+            </li>
+            <li>
+                <a href="../vista/publicar-asesor.php">Crear Publicaci&oacute;n </a>
+            </li>
+            <li>
+                <a href="orden-de-cambio.php">Emitir Orden de Cambio</a>
+            </li>
+            <li>
+                <a href="notificacion-conformidad.php">Emitir Notificaci&oacute;n de Conformidad</a>
+            </li>
+            <li>
+                <a href="contrato.php">Emitir Contrato </a>
+            </li>
             <!-- /.panel -->
         </div>
         <!-- /.col-lg-8 -->
