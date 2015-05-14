@@ -1,6 +1,13 @@
 <?php
 
     include '../modelo/conexion.php';
+	/**
+	* Incluicion de la clase encriptadora
+	*/
+	require_once '../modelo/nucleo/encriptador.php';
+	
+	//Instanciamos el encriptador
+	$encriptador = new Encriptador();
     $conectar = new conexion();
     session_start();
     
@@ -31,7 +38,7 @@
             $contrasenabd=$fila['PASSWORD_U'];
             $permisosenbase = $fila['ROL_R'];   
 
-            if($usuario == $usuariobd && $contrasena == $contrasenabd && $permiso==$permisosenbase && "Habilitado" == $estadobd )
+            if($usuario == $usuariobd && $encriptador->comprobarContrasena($contrasena, $contrasenabd) && $permiso==$permisosenbase && "Habilitado" == $estadobd )
             {   
                     $_SESSION['usuario'] = $usuario;
                     $_SESSION['contrasena'] = $contrasena;
@@ -42,7 +49,7 @@
             }
             else
             {
-                    if($usuario == $usuariobd && $contrasena == $contrasenabd && $permiso2==$permisosenbase && "Habilitado" == $estadobd )
+                    if($usuario == $usuariobd && $encriptador->comprobarContrasena($contrasena, $contrasenabd) && $permiso2==$permisosenbase && "Habilitado" == $estadobd )
                     {   
                             $_SESSION['usuario'] = $usuario;
                             $_SESSION['contrasena'] = $contrasena;
@@ -53,7 +60,7 @@
                     }  
                     else
                     {
-                        if($usuario == $usuariobd && $contrasena == $contrasenabd && $permiso3==$permisosenbase && "Habilitado" == $estadobd )
+                        if($usuario == $usuariobd && $encriptador->comprobarContrasena($contrasena, $contrasenabd) && $permiso3==$permisosenbase && "Habilitado" == $estadobd )
                         {   
                             $_SESSION['usuario'] = $usuario;
                             $_SESSION['contrasena'] = $contrasena;

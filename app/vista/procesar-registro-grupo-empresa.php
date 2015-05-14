@@ -1,5 +1,13 @@
 <?php
 
+	/**
+	* Incluicion de la clase encriptadora
+	*/
+	require_once '../modelo/nucleo/encriptador.php';
+	
+	//Instanciamos el encriptador
+	$encriptador = new Encriptador();
+	
     $nombreUGE = $_POST['nombreU'];
     $nombreLGE = $_POST['nombreL'];
     $nombreCGE = $_POST['nombreC'];
@@ -7,7 +15,7 @@
     $correoGE = $_POST['correo'];
     $telefGE = $_POST['telefono'];
     $dirGE = $_POST['direccion'];
-    $contGE = $_POST['contrasena1'];
+    $contGE = $encriptador->encriptar($_POST['contrasena1']);
     
     include '../modelo/conexion.php';
     require '../vista/PHPMailerAutoload.php';

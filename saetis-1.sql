@@ -1205,7 +1205,7 @@ INSERT INTO `tipo` (`TIPO_T`) VALUES
 CREATE TABLE IF NOT EXISTS `usuario` (
   `NOMBRE_U` varchar(50) NOT NULL,
   `ESTADO_E` varchar(50) NOT NULL,
-  `PASSWORD_U` varchar(50) NOT NULL,
+  `PASSWORD_U` varchar(60) NOT NULL,
   `TELEFONO_U` varchar(8) NOT NULL,
   `CORREO_ELECTRONICO_U` varchar(50) NOT NULL,
   PRIMARY KEY (`NOMBRE_U`) USING BTREE,
@@ -1217,20 +1217,20 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`NOMBRE_U`, `ESTADO_E`, `PASSWORD_U`, `TELEFONO_U`, `CORREO_ELECTRONICO_U`) VALUES
-('Admin1', 'Habilitado', 'Admin1*123', '4442336', 'adm.saetis@gmail.com'),
-('Admin2', 'Habilitado', 'Admin2*123', '4329092', 'joaquin@rodriguez.com'),
-('AgileA', 'Habilitado', 'Agile*123', '4443200', 'agile@action.com'),
-('Arkano', 'Habilitado', 'Arkano*123', '4233322', 'arkano@arkanos.com'),
-('Camaleon', 'Habilitado', 'Camaleon*123', '4442299', 'camaleon@soft.com'),
-('Colective', 'Habilitado', 'Colective*123', '4432211', 'colectivo@virtual.com'),
-('Corina', 'Deshabilitado', 'Corina*123', '4241122', 'corina@hotmail.com'),
-('David', 'Deshabilitado', 'David*123', '4443321', 'davides@gmail.com'),
-('FreeValue', 'Habilitado', 'Freevalue*123', '4329092', 'free@value.com'),
-('LeticiaB', 'Habilitado', 'Leticia*123', '4440099', 'leticia@gmail.com'),
-('MarcoA', 'Deshabilitado', 'Marco*123', '4440099', 'marcoantonio@hotmail.com'),
-('Oasis', 'Habilitado', 'Oasis*123', '4331222', 'oasis@oasis.com'),
-('Patricia', 'Habilitado', 'Patricia*123', '4298765', 'patricia@hotmail.com'),
-('Power', 'Habilitado', 'Power*123', '4329090', 'power@power.com');
+('Admin1', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.F3UALdBCBU8wy5iDvUwNsyK93snvDpi', '4442336', 'adm.saetis@gmail.com'),
+('Admin2', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.Y8Xd6F0XHB0pVpNIJ7yXkx6suI2/JYi', '4329092', 'joaquin@rodriguez.com'),
+('AgileA', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.aDohEHNSv/sIhhbi/kiS/jkifDwRU0y', '4443200', 'agile@action.com'),
+('Arkano', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.GnmmWjwmUn4dW1tt/VNqbkjHIFi6u96', '4233322', 'arkano@arkanos.com'),
+('Camaleon', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.83kUTrQG1hutVSCHOwMfVePM0Vx3.P6', '4442299', 'camaleon@soft.com'),
+('Colective', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.wgekwWtMYZv96.Zq7MCW6SMNRzeNy5e', '4432211', 'colectivo@virtual.com'),
+('Corina', 'Deshabilitado', '$2x$07$./f4af7kJi1jdaxlswE34.OA0licLxuc3lvfxYNwvUKu8Rh3KjYbi', '4241122', 'corina@hotmail.com'),
+('David', 'Deshabilitado', '$2x$07$./f4af7kJi1jdaxlswE34.TY20/K.oBFi8UDxXsrqDTZhwxM7piGW', '4443321', 'davides@gmail.com'),
+('FreeValue', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.tX43iEyMLd5qTeetM4oC8ppiQzbtyZy', '4329092', 'free@value.com'),
+('LeticiaB', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.y5GWL13HmiXkzW4yLqg8wXLZW4OnoLe', '4440099', 'leticia@gmail.com'),
+('MarcoA', 'Deshabilitado', '$2x$07$./f4af7kJi1jdaxlswE34./1wizAUgvlkDXvUj9NcOfWW1XWDQJii', '4440099', 'marcoantonio@hotmail.com'),
+('Oasis', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.RKeQDysUi31zYOZ/6DjyFxlcifR4v16', '4331222', 'oasis@oasis.com'),
+('Patricia', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.cpqjIrkFaTbRg9j33OmnQbhlERM88GC', '4298765', 'patricia@hotmail.com'),
+('Power', 'Habilitado', '$2x$07$./f4af7kJi1jdaxlswE34.XAX7GADtFuLjoRNzRbGxtAFEz2LWely', '4329090', 'power@power.com');
 
 -- --------------------------------------------------------
 
