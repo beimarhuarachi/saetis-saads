@@ -162,7 +162,7 @@
                                      <a href="anadir-socio.php">Añadir socios</a>
                                 </li>
                                  <li class="seleccionado" style="background-color:#eee">
-                                    <a class="seleccionado-color" style="color:#084B8A" href="anadi-rl.php">Seleccionar Representante legal</a>
+                                    <a class="seleccionado-color" style="color:#084B8A" href="anadir-representante-legal.php">Seleccionar Representante legal</a>
                                 </li>
                                 <li>
                                     <a href="seleccionar-asesor.php">Seleccionar Asesor</a>
