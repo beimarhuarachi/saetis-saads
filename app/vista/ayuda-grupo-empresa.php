@@ -81,7 +81,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="ayuda-asesor.php">Ayuda </a>
+            <a class="navbar-brand" href="ayuda-grupo-empresa.php">Ayuda </a>
         </div>
         <!-- /.navbar-header -->
 
@@ -272,7 +272,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header"  >Bienvenido a SAETIS!</h1>
+            <h1 class="page-header"  >Ayuda Grupo Empresa</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -281,7 +281,7 @@
         <div class="col-lg-8">
 
             <div class="col-lg-12">
-                <img  src="../../lib/images/SAETIS.png" alt="portadaInicio" class=" img-thumbnail">
+                <img  src="../../img/ayuda-grupo-empresa.png" alt="portadaInicio" width="900px">
             </div>  
             <!-- /.panel -->
         </div>

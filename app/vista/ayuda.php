@@ -56,9 +56,13 @@
                 <br><br><br><br>
            <div class="sidebar-collapse" >      
 		   <div class="navbar-header">
-				<h2>Flujo a seguir para registro de grupo empresa</h2>
-				<img src="../../img/Ayuda.jpg" style="width:1200px; height:1000px "/>
-			</div>
+                <h2>Flujo a seguir para manejar una grupo empresa</h2>
+                <img src="../../img/ayuda-asesor.png" style="width:1200px; height:1000px "/>
+            </div>
+            <div class="navbar-header">
+                <h2>Flujo a seguir para registro de grupo empresa</h2>
+                <img src="../../img/ayuda-grupo-empresa.png" style="width:1200px; height:1000px "/>
+            </div>
            <div class="col-lg-12" >
       
     
