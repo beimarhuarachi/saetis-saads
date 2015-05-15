@@ -94,7 +94,7 @@
            <div class="sidebar-collapse">      
                       
                   
-             <div class="navbar-default navbar-static-side" role="navigation">
+             <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="side-menu">
                         
@@ -151,12 +151,12 @@
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-building-o fa-fw"></i>Tareas <span class="fa arrow"></span></a>
-                                 <ul class="nav nav-third-level">
+                                 <ul class="nav nav-third-level collapse in">
                                  <li>
                                      <a href="agregar-roles.php">Añadir  Roles</a>
                                 </li>
-                                <li>
-                                     <a href="agregar-gestion.php">Añadir  Gestion</a>
+                                <li class="seleccionado" style="background-color:#eee">
+                                     <a class="seleccionado-color" style="color:#084B8A" href="agregar-gestion.php">Añadir  Gestion</a>
                                 </li>
   
                                 </ul>

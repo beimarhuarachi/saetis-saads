@@ -130,7 +130,7 @@
             </ul>
             <!-- /.navbar-top-links -->
             
-            <div class="navbar-default navbar-static-side" role="navigation">
+            <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="side-menu">
                         
@@ -188,8 +188,8 @@
                             <!-- /.nav-second-level -->
                         </li>
                         
-                        <li>
-                            <a href="historia-actividades.php"><i class="glyphicon glyphicon-calendar"></i> Historia de actividades</a>
+                        <li class="seleccionado" style="background-color:#eee">
+                            <a class="seleccionado-color" style="color:#084B8A" href="historia-actividades.php"><i class="glyphicon glyphicon-calendar"></i> Historia de actividades</a>
                         </li>
                         <li>
                             <a id="registrarPlanificacion" href="#">

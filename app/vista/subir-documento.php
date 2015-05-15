@@ -107,18 +107,18 @@
             </ul>
             <!-- /.navbar-top-links -->
             
-            <div class="navbar-default navbar-static-side" role="navigation">
+            <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="side-menu">
                         
                         
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-files-o "></i> Documentos <span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
+                            <ul class="nav nav-second-level collapse in">
                                 
                                 <li>
                                     <a href="#" >Subir Documentos <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
+                                    <ul class="nav nav-third-level collapse in">
                                     <?php
                                     
                                         $docsReq = $conexion->consulta("SELECT NOMBRE_R FROM registro, documento_r, inscripcion, inscripcion_proyecto WHERE inscripcion_proyecto.CODIGO_P = documento_r.CODIGO_P AND documento_r.ID_R = registro.ID_R AND inscripcion_proyecto.NOMBRE_U = '$uActivo' AND inscripcion.NOMBRE_UGE = inscripcion_proyecto.NOMBRE_U");
@@ -126,8 +126,8 @@
                                         while ($rowDocs = mysql_fetch_row($docsReq))
                                         {
                                             
-                                            echo '<li>
-                                                  <a href="subir-documento.php?doc='.$rowDocs[0].'">'.$rowDocs[0].'</a>
+                                            echo '<li class="seleccionado" style="background-color:#eee">
+                                                  <a class="seleccionado-color" style="color:#084B8A" href="subir-documento.php?doc='.$rowDocs[0].'">'.$rowDocs[0].'</a>
                                                    </li>';  
                                             
                                         }

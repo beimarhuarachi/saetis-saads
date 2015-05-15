@@ -102,7 +102,7 @@
         </ul>
         <!-- /.navbar-top-links -->
 
-        <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
@@ -111,12 +111,12 @@
 
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o fa-files-o "></i> Documentos <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
+                        <ul class="nav nav-second-level collapse in">
                             <li>
                                 <a href="../vista/documentos-generados.php">Contratos Emitidos</a>
                             </li>
-                            <li>
-                                <a href="lista-doc-subidos.php">Documentos Subidos </a>  
+                            <li class="seleccionado" style="background-color:#eee">
+                                <a class="seleccionado-color" style="color:#084B8A" href="lista-doc-subidos.php">Documentos Subidos </a>  
                             </li>
                             <li>
                                 <a href="documentos-recibidos.php">Documentos Recibidos</a>

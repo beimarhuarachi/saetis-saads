@@ -81,12 +81,12 @@
            <div class="sidebar-collapse">      
                       
                   
-             <div class="navbar-default navbar-static-side" role="navigation">
+             <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="side-menu">
                         
-                                <li>
-                                    <a href="../vista/registro-administrador.php"><i class="fa fa-bar-chart-o fa-files-o "></i> Nueva Cuenta<span class="fa arrow"></span></a>
+                                <li class="seleccionado" style="background-color:#eee">
+                                    <a class="seleccionado-color" style="color:#084B8A" href="../vista/registro-administrador.php"><i class="fa fa-bar-chart-o fa-files-o "></i> Nueva Cuenta<span class="fa arrow"></span></a>
                                 </li>                        
                         
                          <li>

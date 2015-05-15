@@ -130,7 +130,7 @@
         </ul>
         <!-- /.navbar-top-links -->
 
-        <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
@@ -154,7 +154,7 @@
 
                     <li>
                         <a href="#"><i class="fa fa-tasks fa-fw"></i> Tareas<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
+                        <ul class="nav nav-second-level collapse in">
                             <li>
                                 <a href="inscripcion-proyecto.php">Registrar Proyecto</a>
                             </li>
@@ -168,8 +168,8 @@
                             <li>
                                 <a href="configuracion-fechas-recepcion.php" >Configurar Fechas para la Recepci&oacute;n de Documentos</a>
                             </li>
-                            <li>
-                                <a href="../vista/publicar-asesor.php">Crear Publicaci&oacute;n </a>
+                            <li class="seleccionado" style="background-color:#eee">
+                                <a class="seleccionado-color" style="color:#084B8A" href="../vista/publicar-asesor.php">Crear Publicaci&oacute;n </a>
                             </li>
                             <li>
                                 <a href="orden-de-cambio.php">Emitir Orden de Cambio</a>

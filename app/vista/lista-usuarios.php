@@ -80,7 +80,7 @@
            <div class="sidebar-collapse">      
                       
                   
-             <div class="navbar-default navbar-static-side" role="navigation">
+             <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="side-menu">
                         
@@ -90,9 +90,9 @@
                         
                          <li>
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> Gestion de usuarios<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="lista-usuarios.php">Usuarios Registrados</a>
+                            <ul class="nav nav-second-level collapse in">
+                                <li class="seleccionado" style="background-color:#eee">
+                                    <a class="seleccionado-color" style="color:#084B8A" href="lista-usuarios.php">Usuarios Registrados</a>
                                 </li>
                                 <li>
                                     <a href="asignar-permisos.php">Modificar Permisos Usuarios</a>

@@ -102,7 +102,7 @@
         </ul>
         <!-- /.navbar-top-links -->
 
-        <div class="navbar-default navbar-static-side" role="navigation">
+        <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
@@ -162,25 +162,25 @@
 
                     <li>
                         <a href="#"><i class="glyphicon glyphicon-th-list"></i> Evaluacion<span class="fa arrow"></span></a>
-                        <ul class="nav nav-third-level">
+                        <ul class="nav nav-third-level collapse in">
                             <li>
                                 <a href="lista-evaluacion.php">Evaluacion 2 Fase </a>                             
                             </li>
                             <li>
                                 <a href="#">Evaluacion 3 Fase <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
+                                <ul class="nav nav-third-level collapse in">
                                     <li>
                                         <a href="crear-modalidad-evaluacion.php">Criterio de Evaluaci&oacute;n </a>                             
                                     </li>
 
                                     <li>
                                         <a href="#">Criterio de Calificaci&oacute;n<span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
+                                        <ul class="nav nav-third-level collapse in">
                                             <li>
                                                 <a href="crear-modalidad-calificacion.php"> Crear Criterio de Calificaci&oacute;n</a>
                                             </li>
-                                            <li>
-                                                <a href="eliminar-criterio-calificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
+                                            <li class="seleccionado" style="background-color:#eee">
+                                                <a class="seleccionado-color" style="color:#084B8A" href="eliminar-criterio-calificacion.php"> Eliminar Criterio de Calificaci&oacute;n</a>
                                             </li>
                                         </ul>
                                     </li>

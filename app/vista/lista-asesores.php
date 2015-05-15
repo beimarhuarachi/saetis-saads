@@ -132,7 +132,7 @@
            <div class="sidebar-collapse">      
                       
                   
-             <div class="navbar-default navbar-static-side" role="navigation">
+             <div class="navbar-default navbar-static-side" role="navigation" onclick="$('.seleccionado-color').css('color', ''); $('.seleccionado').css('background-color', '');">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="side-menu">
                         
@@ -142,7 +142,7 @@
                         
                          <li>
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> Gestion de usuarios<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
+                            <ul class="nav nav-second-level collapse in">
                                 <li>
                                     <a href="lista-usuarios.php">Usuarios Registrados</a>
                                 </li>
@@ -176,9 +176,9 @@
                                 </li>
                                  <li>
                                     <a href="#">Asesor <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="lista-asesores.php"> Lista de Asesores </a>
+                                    <ul class="nav nav-third-level collapse in">
+                                        <li class="seleccionado" style="background-color:#eee">
+                                            <a class="seleccionado-color" style="color:#084B8A" href="lista-asesores.php"> Lista de Asesores </a>
                                             
                                         </li>
                                     </ul>
