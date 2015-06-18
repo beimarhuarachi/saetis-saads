@@ -33,7 +33,7 @@ $idPubli = $_GET['id_us'];
 	 
 	 //volver a la pagina---------------
          
-         echo '<script>alert("Se elimino el documento correctamente");</script>';
+         echo '<script>alert("Se elimino el documento satisfactoriamente");</script>';
          echo '<script>window.location="../vista/publicaciones.php";</script>';}
 	
 	

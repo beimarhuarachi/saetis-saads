@@ -33,7 +33,7 @@
 			$planificacion->setEstado('registrar entregables');
 			$planificacion->modificarBD();
 			echo ('<div class="alert alert-success">
-					   <strong>Planificacion registrada...</strong>
+					   <strong>Planificacion registrada satisfactoriamente</strong>
 				   </div>
 				   <script>$("#page-wrapper").load("vista-registrar-planificacion.php");</script>');
             break;
@@ -47,7 +47,7 @@
 			$planificacion->setEstado('registrar costo total proyecto');
 			$planificacion->modificarBD();
 			echo ('<div class="alert alert-success">
-				       <strong>Entregables registrados...</strong>
+				       <strong>Entregables registrados satisfactoriamente</strong>
 				   </div>
 				   <script>$("#page-wrapper").load("vista-registrar-planificacion.php");</script>');
             break;
@@ -62,7 +62,7 @@
                 
                 $planificacion->modificarBD();
            echo ('<div class="alert alert-success">
-				       <strong>Costo total proyecto registrado...</strong>
+				       <strong>Costo total proyecto registrado satisfactoriamente</strong>
 				   </div>
 				   <script>$("#page-wrapper").load("vista-registrar-planificacion.php");</script>');
             break;
@@ -96,7 +96,7 @@
 			$planificacion->setEstado('planificacion registrada');
 			$planificacion->modificarBD();
 			echo ('<div class="alert alert-success">
-				       <strong>Planificacion registrada...</strong>
+				       <strong>Planificacion registrada satisfactoriamente</strong>
 				   </div>');
             break;
     }

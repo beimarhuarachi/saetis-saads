@@ -73,7 +73,7 @@ $pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->SetFont('Times','',12);
 $pdf->Cell(30);
-$pdf->Cell(0,5,  utf8_decode('TIS ha revisado la propuesta que su empresa a entregado y se ha puntuado'),0,1);
+$pdf->Cell(0,5,  utf8_decode('TIS ha revisado la propuesta que su empresa entrego y se ha puntuado'),0,1);
 $pdf->Cell(30);
 $pdf->Cell(0,5,  utf8_decode('de la siguiente manera :'),0,1);
 $pdf->Cell(25);
@@ -157,7 +157,7 @@ try {
 
 $pdf->Output("$rutaDirectorio/".$idGrupoEmpresa."_NC.pdf",'F');
 $con->cerrarConexion();
-echo "<script type=\"text/javascript\">alert('Notificaci\u00f3n de conformidad enviada....'); window.location='notificacion-conformidad.php';</script>";
+echo "<script type=\"text/javascript\">alert('Notificaci\u00f3n de conformidad enviada.'); window.location='notificacion-conformidad.php';</script>";
 
 
 ?>

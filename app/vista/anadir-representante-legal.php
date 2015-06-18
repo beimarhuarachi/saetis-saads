@@ -212,7 +212,7 @@
             if ($socios < 3) {
 
                 echo '<div class="alert alert-warning">
-                           <strong>Primero debe completar el registro de socios en la opcion "Anadir Socios"</strong>
+                           <strong>Debe completar el registro de socios en la opcion "Anadir Socios"</strong>
                        </div>';
             }
             else

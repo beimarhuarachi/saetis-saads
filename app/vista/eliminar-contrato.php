@@ -41,7 +41,7 @@ if($peticion_regis>0){
 	 
 	 //volver a la pagina---------------
          
-         echo '<script>alert("Se elimino el documento correctamente");</script>';
+         echo '<script>alert("Se elimino el documento satisfactoriamente");</script>';
          echo '<script>window.location="../vista/documentos-generados.php";</script>';
 	
 

@@ -33,7 +33,7 @@ $conectar->consulta("UPDATE usuario_rol SET NOMBRE_U='$updLogin'
 WHERE  NOMBRE_U='$updLogin'");
 
 
-echo"<script type=\"text/javascript\">alert('Se modificaron los datos satisfactoriamente'); window.location='principal.php';</script>";
+echo"<script type=\"text/javascript\">alert('Se guardaron los datos satisfactoriamente'); window.location='principal.php';</script>";
 
  
 ?>

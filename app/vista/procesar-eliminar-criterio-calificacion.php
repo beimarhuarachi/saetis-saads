@@ -43,7 +43,7 @@
 
 		if ($Del_Ind and $Del_Crit) {
 
-			echo '<script>alert("Se elimino el criterio correctamente");</script>';
+			echo '<script>alert("Se elimino el criterio satisfactoriamente");</script>';
 			echo '<script>window.location="../vista/eliminar-criterio-calificacion.php";</script>';
 		
 		}

@@ -75,7 +75,7 @@ if (isset($_POST['lista']))
                                     
                         if($observ == NULL || $vacio == TRUE)
                         {
-                            echo "<script type=\"text/javascript\">alert('Las observaciones no pueden estar en blanco '); window.location='../vista/orden-de-cambio.php';</script>";
+                            echo "<script type=\"text/javascript\">alert('Las observaciones no pueden estar vacias'); window.location='../vista/orden-de-cambio.php';</script>";
                         }
                         else
                         {

@@ -87,7 +87,7 @@ if(isset($aceptar))
                         $registros=$co->consulta("$SQL",$co);
                         **/
                         echo "<SCRIPT LANGUAGE='javascript'>". 
-                        " alert('Exito,la configuracion de $documentoR fue registrada exitosamente.');".
+                        " alert('La configuracion de $documentoR fue registrada satisfactoriamente.');".
                         " document.location=('../../configuracion-fechas-recepcion.php');</SCRIPT>";
                         $SQL="Update plazo".
                                 " Set fecha_inicio_pl='$fechaIni'".
@@ -119,7 +119,7 @@ if(isset($aceptar))
     else 
     {
         echo "<SCRIPT LANGUAGE='javascript'>". 
-                        " alert('Usted no selecciono ningun documento valido a configurar');".
+                        " alert('Usted no selecciono ningun documento valido para configurar');".
                         " document.location=('../../configuracion-fechas-recepcion.php');</SCRIPT>";
     }
   

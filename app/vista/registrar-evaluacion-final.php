@@ -21,7 +21,7 @@
 	
 		$conect->consulta('INSERT INTO nota_final(NOMBRE_U, NOTA_F) VALUES("'.$GrupoEF.'","'.$NotaFn.'")');
 
-		echo '<script>alert("Se registro la nota correctamente");
+		echo '<script>alert("Se registro la nota satisfactoriamente");
 				window.location="../vista/evaluacion-general.php";
 				</script>';
 

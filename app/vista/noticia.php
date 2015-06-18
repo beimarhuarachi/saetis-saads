@@ -421,22 +421,22 @@ function validarCampos(formulario) {
             //Controlar campos vacios y caracteres invalidos
             if(formulario.campoTitulo.value.length==0) {  
                 formulario.campoTitulo.focus();    
-                alert('Por favor, ingresa un titulo');  
+                alert('Ingresa un titulo');  
                 return false;  
             }
             if(!formulario.campoTitulo.value.match(permitidos)) {
 
-                alert('Caracteres no validos:_a,¿?()*,"" ');
+                alert('El titulo tiene caracteres no validos:_a,¿?()*,"" ');
                 return false;
             }
             if(formulario.campoDescripcion.value.length >= 1000) {
                 formulario.campoDescripcion.focus();
-                alert('Descripcion demasiado larga(max 1000 caracteres)')
+                alert('Descripcion no debe tener mas de 1000 caracteres)')
                 return false;
             }
             if(formulario.campoDescripcion.value.length==0){
                 formulario.campoDescripcion.focus();
-                alert('Por favor, ingrese una descripcion');
+                alert('Ingrese una descripcion');
                 return false;
             }
 

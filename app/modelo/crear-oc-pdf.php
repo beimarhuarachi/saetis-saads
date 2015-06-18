@@ -94,7 +94,7 @@ class ORDENPDF extends FPDF
 		$this->AddPage();
 		$this->SetFont('Times','',12);
 		$this->Cell(30);
-		$this->Cell(0,5,  utf8_decode('TIS ha revisado la propuesta que su empresa a entregado y se ha puntuado'),0,1);
+		$this->Cell(0,5,  utf8_decode('TIS ha revisado la propuesta que su empresa entrego y ha sido puntuada'),0,1);
 		$this->Cell(30);
 		$this->Cell(0,5,  utf8_decode('de la siguiente manera :'),0,1);
 		$this->Cell(25);

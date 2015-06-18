@@ -13,7 +13,7 @@
       
       if($cantC != 0 )
       {
-         echo"<script type=\"text/javascript\">alert('Usted ya emitio un contrato para esta grupo empresa'); window.location='../Vista/contrato.php';</script>";  
+         echo"<script type=\"text/javascript\">alert('Ya se emitio un contrato para esta grupo empresa'); window.location='../Vista/contrato.php';</script>";  
       }
       else
       {
@@ -166,7 +166,7 @@
             }
             else{        
             
-               echo"<script type=\"text/javascript\">alert('Por favor, seleccione una grupo empresa'); window.location='../Vista/contrato.php';</script>";  
+               echo"<script type=\"text/javascript\">alert('Seleccione una grupo empresa'); window.location='../Vista/contrato.php';</script>";  
             }
         }
         else

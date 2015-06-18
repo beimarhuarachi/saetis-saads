@@ -44,14 +44,14 @@ if(isset($Agregar))
 
 
                         echo "<SCRIPT LANGUAGE='javascript'>". 
-                            " alert('Se ha registrado satisfactoriamente el criterio_evaluacion');".
+                            " alert('Se ha registrado satisfactoriamente el criterio_evaluacion.');".
                             " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                     }
                     else 
                         
                     {
                           echo "<SCRIPT LANGUAGE='javascript'>". 
-                            " alert('Llene un campo valido no puede registrar un espacio en blanco.');".
+                            " alert('El criterio de evaluacion es invalido.');".
                             " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                     }    
                     
@@ -59,7 +59,7 @@ if(isset($Agregar))
                 else 
                 {
                     echo "<SCRIPT LANGUAGE='javascript'>". 
-                        " alert('EL criterio que ingreso ya se encuentra registrado. ');".
+                        " alert('EL criterio que ingreso ya se encuentra registrado.');".
                         " document.location=('../../crear-modalidad-evaluacion.php');</SCRIPT>";
                 }
 }

@@ -18,7 +18,7 @@
 	{
 		$con->consulta("UPDATE inscripcion_proyecto SET ESTADO_CONTRATO = 'Firmado' WHERE NOMBRE_U='$nombreUGE[0]'");
 
-		echo   '<script>alert("Se registro la firma del contrato correctamente")
+		echo   '<script>alert("Se registro la firma del contrato satisfactoriamente")
 					window.location="../vista/registrar-firma.php";
 			    </script>';
 	}

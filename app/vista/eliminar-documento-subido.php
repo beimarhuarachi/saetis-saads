@@ -37,7 +37,7 @@ $idgp = $_GET['id_us'];
 	 
 	 //volver a la pagina---------------
          
-         echo '<script>alert("Se elimino el documento correctamente");</script>';
+         echo '<script>alert("Se elimino el documento satisfactoriamente");</script>';
          echo '<script>window.location="../vista/lista-doc-subidos.php";</script>';
 	
 	

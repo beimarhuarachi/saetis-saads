@@ -84,7 +84,7 @@
 
                                 if(isset($con2)){
 
-                                    echo '<script>alert("Se registraron los datos correctamente");</script>';
+                                    echo '<script>alert("Se registraron los datos satisfactoriamente");</script>';
 
                                 }      
                         }          

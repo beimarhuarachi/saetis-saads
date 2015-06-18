@@ -78,7 +78,7 @@ include '../modelo/conexion.php';
                         if($In_Form and $In_CritE and $In_CritC and $In_Ptje)
                         {
 
-                            echo '<script>alert("Se guardo el formulario correctamente");</script>';
+                            echo '<script>alert("Se guardo el formulario satisfactoriamente");</script>';
                       
                         }
 
