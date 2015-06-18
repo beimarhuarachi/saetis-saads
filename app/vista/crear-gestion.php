@@ -22,7 +22,7 @@ $addRol = $_POST['rol'];
         if(!is_array($verificarD))
         {
             $peticion = $conectar->consulta("INSERT INTO `gestion` (`ID_G`, `NOM_G`, `FECHA_INICIO_G`, `FECHA_FIN_G`) VALUES (NULL, '$addRol', '$addini', '$addfin')");    
-            echo"<script type=\"text/javascript\">alert('Se registro satisfactoriamenta la gestion'); window.location='agregar-gestion.php';</script>";    
+            echo"<script type=\"text/javascript\">alert('La gestion fue registrada satisfactoriamente'); window.location='agregar-gestion.php';</script>";    
         }
         else
         {
@@ -31,6 +31,6 @@ $addRol = $_POST['rol'];
     }
     else
     {
-        echo"<script type=\"text/javascript\">alert('Ya existe una gestion con ese nombre'); window.location='agregar-gestion.php';</script>";
+        echo"<script type=\"text/javascript\">alert('Ya existe una gestion registrada con el mismo nombre'); window.location='agregar-gestion.php';</script>";
     }
 ?>

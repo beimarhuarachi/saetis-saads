@@ -54,11 +54,11 @@ $peticion3 = $conectar ->consulta("SELECT * FROM asesor");
 	
 	 //volver a la pagina---------------
          
-        echo"<script type=\"text/javascript\">alert('El registro se realizo exitosamente'); window.location='principal.php';</script>";
+        echo"<script type=\"text/javascript\">alert('El registro se realizo satisfactoriamente'); window.location='principal.php';</script>";
 	
      }
  else{
      
-   echo"<script type=\"text/javascript\">alert('El nombre de usuario ya fue registrado por favor cambie de nombre'); window.location='registro-administrador.php';</script>";  
+   echo"<script type=\"text/javascript\">alert('El nombre de usuario ya se encuentra registrado'); window.location='registro-administrador.php';</script>";  
      }
 

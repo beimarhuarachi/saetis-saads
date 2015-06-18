@@ -49,7 +49,7 @@
         if($On_GE)
         {
 
-            echo '<script>alert("Se habilito la grupo empresa correctamente");</script>';
+            echo '<script>alert("Se habilito la grupo empresa satisfactoriamente");</script>';
             echo '<script>window.location="../vista/administrar-grupo-empresa.php";</script>';
                    
         }
@@ -62,7 +62,7 @@
         if($Off_GE)
         {
 
-            echo '<script>alert("Se Deshabilito la grupo empresa correctamente");</script>';
+            echo '<script>alert("Se Deshabilito la grupo empresa satisfactoriamente");</script>';
             echo '<script>window.location="../vista/administrar-grupo-empresa.php";</script>';
                    
         }

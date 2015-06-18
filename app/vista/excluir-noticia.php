@@ -12,7 +12,7 @@ $delNoti = $conect->consulta("DELETE FROM noticias WHERE   ID_N= '$noticia'");
 
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
 
-alert ("Tema eliminado con exito.")
+alert ("Tema eliminado con satisfactoriamente.")
 
 </SCRIPT>
 <script>

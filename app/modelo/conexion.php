@@ -24,13 +24,13 @@ $password = '';
 $bdName = 'saetis';
 //$bdName = 'freevalue';
 global $link;
-    $link =  mysql_connect($servidor, $userName, $password) or die('no se pudo conectar al servidor' . mysql_error());
-    mysql_select_db($bdName,$link) or die('no se pudo encontrar la base de datos');
+    $link =  mysql_connect($servidor, $userName, $password) or die('No se pudo conectar con el servidor' . mysql_error());
+    mysql_select_db($bdName,$link) or die('No se pudo encontrar la base de datos');
 }
 
 function consulta($consulta) {
     global $link;
-    $resultado = mysql_query($consulta,$link)  or die('error en la consulta' . mysql_error());
+    $resultado = mysql_query($consulta,$link)  or die('Error en la consulta' . mysql_error());
     return $resultado;
     
 }

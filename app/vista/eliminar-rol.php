@@ -14,6 +14,6 @@ $peticion = $conectar->consulta("DELETE FROM rol WHERE ROL_R='".$delRol."'");
 //cerrar conexion--------------------------
 
  //volver a la pagina---------------
-         echo '<script>alert("Se elimino  correctamente");</script>';
+         echo '<script>alert("Se elimino satisfactoriamente");</script>';
          echo '<script>window.location="../vista/agregar-roles.php";</script>';
 ?>

@@ -14,7 +14,7 @@ $peticion = $conectar->consulta("DELETE FROM `sesion` WHERE 1");
 //cerrar conexion--------------------------
 
  //volver a la pagina---------------
-         echo '<script>alert("Se elimino  correctamente");</script>';
+         echo '<script>alert("Se elimino satisfactoriamente");</script>';
          echo '<script>window.location="../vista/bitacora-ingreso.php";</script>';
 ?>
 

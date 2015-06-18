@@ -310,7 +310,7 @@
                         }
                         else
                         {
-                            echo "No tienen ningun formulario registrado...vaya al siguiente link para crear uno";
+                            echo "No tienen ningun formulario registrado. Vaya al siguiente link para crear uno";
                             echo '<a href="../vista/crear-formulario.php" class="btn btn-default btn-xs">Crear Formulario</a>';
 
                         }              

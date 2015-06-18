@@ -242,7 +242,7 @@
                         {
                             echo '<div class="form-group">
                                     <div class="alert alert-warning">
-                                        <strong>* Recuerde que debe registrar al menos 3 socios</strong>
+                                        <strong>* Debe registrar al menos 3 socios</strong>
                                     </div>
                                 </div>';
 

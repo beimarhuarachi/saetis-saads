@@ -48,7 +48,7 @@ else{
 	if ($InsertarDocumento and $InsertarPlazo and $InsertarDescripcion) {
 
 			echo "<SCRIPT LANGUAGE='javascript'>". 
-		            " alert('Exito, el registro del documento se realizo exitosamente.');".
+		            " alert('Se registro del documento se realizo satisfactoriamente.');".
 		            " document.location=('../vista/registrar-documentos-requeridos.php');</SCRIPT>";
 	}
 	else{

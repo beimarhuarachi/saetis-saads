@@ -121,7 +121,7 @@ $idAsesor = $_GET['id_us'];
         echo '<script>
             var pagina =  "eliminar-asesor.php?id_us='.$idAsesor.'&op=si"
             var pagina2 = "eliminar-asesor.php?id_us='.$idAsesor.'&op=no"
-            if(confirm("El asesor tiene registros...desea eliminarlo de todas formas??"))
+            if(confirm("El asesor tiene registros. Desea eliminarlo de todas formas??"))
             {
                 location.href = pagina
             }

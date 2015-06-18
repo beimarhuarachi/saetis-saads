@@ -31,7 +31,7 @@ include '../modelo/conexion.php';
         if($Del_FCE and $Del_FCC and $Del_Pje and $Del_Form) 
         {
 
-            echo '<script>alert("Se elimino el formulario correctamente");</script>';
+            echo '<script>alert("Se elimino el formulario satisfactoriamente");</script>';
             echo '<script>window.location="eliminar-formulario.php";</script>';
  
         }
